@@ -2,20 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Zodkoo | Bootstrap 5 Landing Page Template</title>
+        <title>MedHub Global - Healthcare Procurement with AI-Driven Solutions</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Responsive bootstrap landing template" />
         <meta name="author" content="Techzaa" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="icon" href="images/MedHub/favicon.svg" type="image/x-icon" />
 
         <!-- css -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
-        <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
 
         <!-- Color style -->
         <link href="css/colors/default.css" rel="stylesheet" />
+
+        <!-- Font Awesome style -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     </head>
 
     <body data-bs-target=".navbar" data-bs-offset="72">
@@ -23,9 +26,7 @@
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-custom sticky-dark" id="navbar-sticky">
             <div class="container">
                 <!-- LOGO -->
-                <a class="navbar-brand logo" href="index.html">
-                    Zodkoo
-                </a>
+                <a href="index.html"><img style="width: 200px;" src="images/MedHub/logo.svg" alt=""></a>
 
                 <!-- Responsive menu button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,18 +36,21 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav navbar-center nav-custom-left" id="mySidenav">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link active">Home</a>
+                            <a href="about-us.html" class="nav-link">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">Features</a>
+                            <a href="buyer.html" class="nav-link">For Buyer</a>
                         </li>
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">Plans</a>
+                            <a href="supplier.html" class="nav-link">For Supplier</a>
                         </li>
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">Clients</a>
+                            <a href="pricing-plans.html" class="nav-link">Pricing Plans</a>
                         </li>
-                        <li class="dropdown nav-item">
+                        <li class="nav-item">
+                            <a href="contact-us.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <!-- <li class="dropdown nav-item">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Pages</a>
                             <ul class="dropdown-menu arrow" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
@@ -54,15 +58,20 @@
                                 <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
                                 <li><a class="dropdown-item" href="jobs.html">Jobs</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right ms-auto">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Login</a>
+                            <a href="contact-us.html" class="btn btn-white navbar-btn nav-link">Request Demo</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="" class="btn btn-white navbar-btn nav-link">Try for Free</a>
+                        <li class="nav-item dropdown">
+                            <!-- <a href="" class="btn btn-white navbar-btn nav-link">Login <i class="fa fa-caret-down text-dark" aria-hidden="true"></i></a> -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
+                            <ul class="dropdown-menu arrow" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://medhub.shunyaekai.com/buyer" target="_blank">Login as Buyer</a></li>
+                                <li><a class="dropdown-item" href="https://medhub.shunyaekai.com/supplier" target="_blank">Login as Supplier</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -71,68 +80,66 @@
         <!-- END NAVBAR -->
 
         <!-- Header title -->
-        <section class="bg-primary header-title-box">
+        <section class="home bg-img-01" id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h3 class="text-white">About us and our mission</h3>
+                        <div class="home-fullscreen" id="home-fullscreen">
+                            <div class="full-screen">
+                                <div class="home-wrapper home-wrapper-alt text-light">
+                                    <h3 class="text-white">Revolutionizing Healthcare Procurement through Innovation and Expertise</h3>
+                                    <p class="text-light">At MedHub Global, we are connecting buyers and suppliers through an intelligent, AI-driven platform that eliminates
+                                        inefficiencies in healthcare procurement.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- end container -->
         </section>
         <!-- END Header title -->
 
         <!-- OUR STORY -->
         <section class="section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-center">
-                            <div class="title-box-icon title-about">
-                                <i class="pe-7s-medal"></i>
-                                <h3 class="title">Our Story</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end row -->
-
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="feat-description text-center">
-                            <h4 class="text-muted">Praesent et viverra massa non varius magna eget nibh vitae velit posuere efficitur.</h4>
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <div class="feat-description">
+                            <h1 class="text-primary">Our Story</h1>
                             <p class="text-muted">
-                                The clean and well commented code allows easy customization of the theme.It's designed for describing your app, agency or business.We put a lot of effort in design, as it’s the most important ingredient of
-                                successful website.Sed ut perspiciatis unde omnis iste natus error sit.We put a lot of effort in design, as it’s the most important ingredient of successful website.
+                                MedHub Global was created to address the ongoing challenges in healthcare procurement challenges like supply chain disruptions, lack of transparency, 
+                                and outdated processes that hinder efficiency and therefore patient care. By recognizing these gaps, our team of experts united to develop a platform 
+                                that bridges these divides, empowering healthcare providers, suppliers, and businesses of all sizes. With a focus on innovation and inclusivity, MedHub 
+                                Global is transforming the healthcare procurement landscape, enabling all stakeholders to thrive.
                             </p>
                         </div>
                     </div>
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-        </section>
 
+                    <div class="col-lg-6">
+                        <img src="images/MedHub/about/OurHistory.jpg" alt="img" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- end our story -->
 
         <div class="clearfix"></div>
 
-        <!-- OUR MISSION -->
+        <!-- OUR Team -->
         <section class="container-fluid">
             <div class="row wide-img-showcase-row">
                 <div class="col-lg-6 no-padding img">
                     &nbsp;
                 </div>
-                <!-- end col -->
+
                 <div class="col-lg-6 offset-lg-6 bg-light">
                     <div class="about-detail-img-box">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="text-center">
-                                    <div class="title-box-icon title-about">
+                                    <div class="title-box-icon title-about text-primary">
                                         <i class="pe-7s-rocket"></i>
-                                        <h3 class="title">Our Mission</h3>
+                                        <h3 class="title">Our Team: Expertise Driving Innovation</h3>
                                     </div>
                                 </div>
                             </div>
@@ -141,27 +148,20 @@
                         <div class="row">
                             <div class="col-lg-8 offset-lg-2">
                                 <div class="feat-description text-center">
-                                    <h4 class="text-muted">Praesent et viverra massa non varius magna eget nibh vitae velit posuere efficitur.</h4>
+                                    <!-- <h4 class="text-muted">Praesent et viverra massa non varius magna eget nibh vitae velit posuere efficitur.</h4> -->
                                     <p class="text-muted">
-                                        The clean and well commented code allows easy customization of the theme.It's designed for describing your app, agency or business.We put a lot of effort in design, as it’s the most important
-                                        ingredient of successful website.Sed ut perspiciatis unde omnis iste natus error sit.We put a lot of effort in design, as it’s the most important ingredient of successful website.
+                                        MedHub Global’s team is made up of industry veterans with extensive experience in healthcare procurement, AI technology, logistics, and 
+                                        compliance. From data scientists to supply chain experts, we are united by a shared commitment to developing innovative tools that empower 
+                                        our users to succeed and thrive in the evolving healthcare landscape.
                                     </p>
                                 </div>
-                                <!-- Features Description -->
                             </div>
-                            <!-- end col -->
                         </div>
-                        <!-- end row -->
                     </div>
-                    <!-- end about detail -->
                 </div>
-                <!-- end col -->
             </div>
-            <!-- end row -->
         </section>
-        <!--  END OUR MISSION -->
-
-        <div class="clearfix"></div>
+        <!-- END OUR Team -->
 
         <!-- OUR VALUE -->
         <section class="container-fluid">
@@ -171,167 +171,211 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="text-center">
-                                    <div class="title-box-icon title-about">
+                                    <div class="title-box-icon title-about text-primary">
                                         <i class="pe-7s-safe"></i>
-                                        <h3 class="title">Our Values</h3>
+                                        <h3 class="title">Join Us in Transforming Healthcare Procurement</h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- end row -->
 
                         <div class="row">
                             <div class="col-lg-8 offset-lg-2">
                                 <div class="feat-description text-center">
-                                    <h4 class="text-muted">Praesent et viverra massa non varius magna eget nibh vitae velit posuere efficitur.</h4>
+                                    <!-- <h4 class="text-muted">Praesent et viverra massa non varius magna eget nibh vitae velit posuere efficitur.</h4> -->
                                     <p class="text-muted">
-                                        The clean and well commented code allows easy customization of the theme.It's designed for describing your app, agency or business.We put a lot of effort in design, as it’s the most important
-                                        ingredient of successful website.Sed ut perspiciatis unde omnis iste natus error sit.We put a lot of effort in design, as it’s the most important ingredient of successful website.
+                                        Whether you're a buyer in search of reliable suppliers or a supplier looking to expand your reach, MedHub Global is your trusted partner. 
+                                        Together, we can shape a future defined by efficiency, transparency, and innovation in healthcare procurement.
                                     </p>
+                                    <a href="contact-us.html" class="btn btn-primary mt-4">Request a Demo</a>
                                 </div>
-                                <!-- Features Description -->
                             </div>
-                            <!-- end col -->
                         </div>
-                        <!-- end row -->
                     </div>
-                    <!-- end about detail -->
                 </div>
-                <!-- end col -->
 
                 <div class="col-lg-6 offset-lg-6 no-padding img-2"></div>
             </div>
-            <!-- end row -->
         </section>
         <!-- End OUR VALUE -->
 
-        <div class="clearfix"></div>
-
-        <!-- OUR Team -->
+        <!-- Features Alt -->
         <section class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3 class="title">Our Team</h3>
-                        <p class="text-muted sub-title">
-                            The clean and well commented code allows easy customization of the theme.It's <br />
-                            designed for describing your app, agency or business.
-                        </p>
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <div class="title-box-icon text-primary">
+                                <i class="pe-7s-medal"></i>
+                                <h3 class="title">What Sets Us Apart?</h3>
+                                <!-- <p>Effortless Procurement, Endless Possibilities - AI-Powered Tools for the Modern Marketplace</p> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- end row -->
+
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <div class="feat-description">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-arrow-right text-primary" aria-hidden="true"></i>
+                                <p class="mx-3">Decades of combined experience in healthcare and technology.</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-arrow-right text-primary" aria-hidden="true"></i>
+                                <p class="mx-3">A proven track record of delivering innovative solutions across global markets.</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-arrow-right text-primary" aria-hidden="true"></i>
+                                <p class="mx-3">A deep passion for simplifying complex systems to create real value for our clients.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <img src="images/MedHub/about/whatsetsaparts.jpg" alt="img" class="img-fluid" />
+                    </div>
+                </div>                
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end features alt -->
+
+        <!-- <div class="clearfix"></div> -->
+
+        <!-- Why MedHub Global -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center text-primary">
+                        <h3 class="title">Why MedHub Global?</h3>
+                    </div>
+                </div>
+
+                <div class="row margin-top-after-heading">
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="job-box">
+                            <div class="text-center">
+                                <i class="fa fa-medkit fa-10x text-primary rounded-circle text-center" aria-hidden="true" style="font-size: 65px;"></i>
+                                <h5 class="text-primary mt-4">Proven Leadership</h5>
+                            </div>
+                            <p class="text-muted">Led by a team with decades of combined experience in healthcare and technology, driving impactful solutions.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="job-box">
+                            <div class="text-center">
+                                <i class="fa fa-medkit fa-10x text-primary rounded-circle text-center" aria-hidden="true" style="font-size: 65px;"></i>
+                                <h5 class="text-primary mt-4">Innovation-Driven</h5>
+                            </div>
+                            <p class="text-muted">We harness AI, automation, and advanced analytics to stay ahead of industry trends and continuously enhance our platform.</p>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <div class="row team text-center">
-                            <!-- team-member -->
-                            <div class="col-lg-4">
-                                <div class="team-member animated fadeInDown wow" data-wow-delay=".1s">
-                                    <img src="images/team/team-1.jpg" alt="team-member" class="img-fluid rounded-circle" />
-                                    <h4>Holden McGroin</h4>
-                                    <p class="text-muted">Product Designer & Founder</p>
-                                </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="job-box">
+                            <div class="text-center">
+                                <i class="fa fa-medkit fa-10x text-primary rounded-circle text-center" aria-hidden="true" style="font-size: 65px;"></i>
+                                <h5 class="text-primary mt-4">Transparency & Trust</h5>
                             </div>
-
-                            <!-- team-member -->
-                            <div class="col-lg-4">
-                                <div class="team-member animated fadeInDown wow" data-wow-delay=".3s">
-                                    <img src="images/team/team-2.jpg" alt="team-member" class="img-fluid rounded-circle" />
-                                    <h4>Mike Oxbigg</h4>
-                                    <p class="text-muted">Developer & Co-founder</p>
-                                </div>
-                            </div>
-
-                            <!-- team-member -->
-                            <div class="col-lg-4">
-                                <div class="team-member animated fadeInDown wow" data-wow-delay=".5s">
-                                    <img src="images/team/team-3.jpg" alt="team-member" class="img-fluid rounded-circle" />
-                                    <h4>Eilean Dover</h4>
-                                    <p class="text-muted">UI/UX Designer</p>
-                                </div>
-                            </div>
-                            <!-- end col -->
+                            <p class="text-muted">Committed to ensuring secure, compliant transactions, fostering trust and reliability for all users.</p>
                         </div>
-                        <!-- end row -->
                     </div>
-                    <!-- end col -->
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- ed container-->
-        </section>
-        <!-- OUR TEAM -->
 
-        <!-- CTA SECTION -->
-        <section class="section bg-primary">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-lg-10 offset-lg-1">
-                        <h5 class="text-uppercase mt-0 text-white-70">We are Here to Help You</h5>
-                        <h2 class="text-white">Best Solutions for Your Business</h2>
-                        <a href="" class="btn btn-white mt-3">Get Started Now</a>
+                    <div class="col-lg-5">
+                        <div class="job-box">
+                            <div class="text-center">
+                                <i class="fa fa-medkit fa-10x text-primary rounded-circle text-center" aria-hidden="true" style="font-size: 65px;"></i>
+                                <h5 class="text-primary mt-4">Customer-Centric Approach</h5>
+                            </div>
+                            <p class="text-muted">Your success is our priority—our constant innovation is driven by your evolving needs and goals.</p>
+                        </div>
                     </div>
                 </div>
-                <!-- end row -->
             </div>
         </section>
-        <!-- END CTA SECTION -->
+        <!-- END Why MedHub Global -->
+
+        <div class="clearfix"></div>
 
         <!-- FOOTER -->
-        <footer class="section bg-gray footer">
+        <footer class="section footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <h5>Zodkoo</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Features</a></li>
-                            <li><a href="">Team</a></li>
-                            <li><a href="">FAQ</a></li>
+                        <a href="index.html"><img style="width: 200px;" src="images/MedHub/FooterLogo.svg" alt=""></a>
+                        <p class="text mt-4">MedHub Global is a trading name of One Vision Technologies Ltd. All rights reserved.</p>
+                        <ul class="list-unstyled d-flex">
+                            <li><h6 class="text">Follow Us :</h6></li>
+                            <li class="mx-2"><a href="https://www.facebook.com/people/MedHub-Global/61570166584714/">
+                                <i class="fa fa-facebook text-primary" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="mx-2"><a href="https://x.com/medhubglobal">
+                                <i class="fa fa-twitter text-primary" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="mx-2"><a href="https://www.linkedin.com/company/medhub-global">
+                                <i class="fa fa-linkedin text-primary" aria-hidden="true"></i></a>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3">
-                        <h5>Social</h5>
+                        <h4 class="mb-4 text-primary">Quick Links</h4>
                         <ul class="list-unstyled">
-                            <li><a href="">Facebook</a></li>
-                            <li><a href="">Twitter</a></li>
-                            <li><a href="">Behance</a></li>
-                            <li><a href="">Dribbble</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="buyer.html">For Buyer</a></li>
+                            <li><a href="supplier.html">For Supplier</a></li>
+                            <li><a href="pricing-plans.html">Pricing Plans</a></li>
+                            <li><a href="contact-us.html">Request a Demo</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3">
-                        <h5>Support</h5>
+                        <h4 class="text-primary mb-4">Support</h4>
                         <ul class="list-unstyled">
-                            <li><a href="">Help & Support</a></li>
-                            <li><a href="">Privacy Policy</a></li>
-                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3">
-                        <h5>Contact</h5>
-                        <address>
-                            795 Folsom Ave, Suite 600<br />
-                            San Francisco, CA 94107<br />
-                            <abbr title="Phone">P:</abbr> (123) 456-7890<br />
-                            E: <a href="mailto:#">email@email.com</a>
-                        </address>
+                        <h4 class="text-primary mb-4">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
+                                <i class="fa fa-map-marker mt-1 text-primary" aria-hidden="true"></i>
+                                <p class="mx-3">
+                                    Regus, 3rd floor, News Building,<br />
+                                    3 London Bridge Street, London<br />
+                                    SE1 9SG, United Kingdom<br />
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone text-primary" aria-hidden="true"></i>
+                                <a href="contact-us.html" class="mx-2">Request Call Back</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope text-primary" aria-hidden="true"></i>
+                                <a href="mailto:connect@medhub.global" class="mx-2">connect@medhub.global</a>
+                            </li>
+                        </ul>                        
                     </div>
                 </div>
-                <!-- end row -->
 
                 <div class="row">
                     <div class="col-lg-12">
+                        <hr class="text-light border-2"/>
                         <div class="footer-alt text-center">
-                            <p class="text-muted mb-0"><script>document.write(new Date().getFullYear())</script> © Zodkoo</p>
+                            <!-- <p class="text-muted mb-0"><script>document.write(new Date().getFullYear())</script> © Zodkoo</p> -->
+                             &copy; 2025 <a href="#">medhubglobal.com</a>. All rights reserved
                         </div>
                     </div>
                 </div>
-                <!-- end row -->
             </div>
-            <!-- end container -->
         </footer>
         <!-- END FOOTER -->
 
@@ -344,3 +388,112 @@
         <script src="js/app.js"></script>
     </body>
 </html>
+
+<!-- STRAT NAVBAR -->
+<!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-custom sticky-dark" id="navbar-sticky">
+    <div class="container">
+        <a class="navbar-brand logo" href="index.html">
+            Zodkoo
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-center nav-custom-left" id="mySidenav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Plans</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Clients</a>
+                </li>
+                <li class="dropdown nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Pages</a>
+                    <ul class="dropdown-menu arrow" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                        <li><a class="dropdown-item" href="jobs.html">Jobs</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right ms-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="btn btn-white navbar-btn nav-link">Try for Free</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav> -->
+<!-- END NAVBAR -->
+
+<!-- OUR Team -->
+<!-- <section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="title">Our Team</h3>
+                <p class="text-muted sub-title">
+                    The clean and well commented code allows easy customization of the theme.It's <br />
+                    designed for describing your app, agency or business.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="row team text-center">
+                    <div class="col-lg-4">
+                        <div class="team-member animated fadeInDown wow" data-wow-delay=".1s">
+                            <img src="images/team/team-1.jpg" alt="team-member" class="img-fluid rounded-circle" />
+                            <h4>Holden McGroin</h4>
+                            <p class="text-muted">Product Designer & Founder</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="team-member animated fadeInDown wow" data-wow-delay=".3s">
+                            <img src="images/team/team-2.jpg" alt="team-member" class="img-fluid rounded-circle" />
+                            <h4>Mike Oxbigg</h4>
+                            <p class="text-muted">Developer & Co-founder</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="team-member animated fadeInDown wow" data-wow-delay=".5s">
+                            <img src="images/team/team-3.jpg" alt="team-member" class="img-fluid rounded-circle" />
+                            <h4>Eilean Dover</h4>
+                            <p class="text-muted">UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- OUR TEAM -->
+
+<!-- CTA SECTION -->
+<!-- <section class="section bg-primary">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-10 offset-lg-1">
+                <h5 class="text-uppercase mt-0 text-white-70">We are Here to Help You</h5>
+                <h2 class="text-white">Best Solutions for Your Business</h2>
+                <a href="" class="btn btn-white mt-3">Get Started Now</a>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- END CTA SECTION -->

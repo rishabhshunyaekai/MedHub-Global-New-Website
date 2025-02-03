@@ -16,13 +16,13 @@ $value in $theme-colors {
 }
 
 ::selection {
-    background: rgba($warning, 0.5);
-    color: $gray-700;
+    background: rgba($primary, 0.5);
+    color: $white;
 }
 
 ::-moz-selection {
-    background: rgba($warning, 0.5);
-    color: $gray-700;
+    background: rgba($primary, 0.5);
+    color: $white;
 }
 
 .section {

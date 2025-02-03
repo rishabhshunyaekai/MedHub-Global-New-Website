@@ -2,20 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Zodkoo | Bootstrap 5 Landing Page Template</title>
+        <title>MedHub Global - Healthcare Procurement with AI-Driven Solutions</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Responsive bootstrap landing template" />
         <meta name="author" content="Techzaa" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="icon" href="images/MedHub/favicon.svg" type="image/x-icon" />
 
         <!-- css -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
-        <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
 
         <!-- Color style -->
         <link href="css/colors/default.css" rel="stylesheet" />
+
+        <!-- Font Awesome style -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     </head>
 
     <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="72">
@@ -23,9 +26,7 @@
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-custom sticky-dark" id="navbar-sticky">
             <div class="container">
                 <!-- LOGO -->
-                <a class="navbar-brand logo" href="index.html">
-                    Zodkoo
-                </a>
+                <a href="index.html"><img style="width: 200px;" src="images/MedHub/logo.svg" alt=""></a>
 
                 <!-- Responsive menu button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,34 +36,42 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav navbar-center nav-custom-left" id="mySidenav">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">Home</a>
+                            <a href="about-us.html" class="nav-link">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#features" class="nav-link">Features</a>
+                            <a href="buyer.html" class="nav-link">For Buyer</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#pricing" class="nav-link">Plans</a>
+                            <a href="supplier.html" class="nav-link">For Supplier</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#clients" class="nav-link">Clients</a>
+                            <a href="pricing-plans.html" class="nav-link">Pricing Plans</a>
                         </li>
-                        <li class="dropdown nav-item">
-                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Pages</a>
+                        <li class="nav-item">
+                            <a href="contact-us.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <!-- <li class="dropdown nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Pages</a>
                             <ul class="dropdown-menu arrow" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
                                 <li><a class="dropdown-item" href="contact.html">Contact</a></li>
                                 <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
                                 <li><a class="dropdown-item" href="jobs.html">Jobs</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right ms-auto">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Login</a>
+                            <a href="contact-us.html" class="btn btn-white navbar-btn nav-link">Request Demo</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="" class="btn btn-white navbar-btn nav-link">Try for Free</a>
+                        <li class="nav-item dropdown">
+                            <!-- <a href="" class="btn btn-white navbar-btn nav-link">Login <i class="fa fa-caret-down text-dark" aria-hidden="true"></i></a> -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
+                            <ul class="dropdown-menu arrow" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://medhub.shunyaekai.com/buyer" target="_blank">Login as Buyer</a></li>
+                                <li><a class="dropdown-item" href="https://medhub.shunyaekai.com/supplier" target="_blank">Login as Supplier</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -71,19 +80,16 @@
         <!-- END NAVBAR -->
 
         <!-- HOME -->
-        <section class="bg-primary home" id="home">
+        <section class="home bg-img-1" id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="home-fullscreen" id="home-fullscreen">
                             <div class="full-screen">
-                                <div class="home-wrapper home-wrapper-alt">
-                                    <h1 class="fw-light text-white">Zodkoo is a fully responsive landing page template</h1>
-                                    <h4 class="text-white-70">
-                                        Zodkoo is a fully responsive landing page built using the latest Bootstrap framework. It's designed for describing your app, agency or business. The clean and well commented code allows easy
-                                        customization of the theme.
-                                    </h4>
-                                    <a href="" class="btn btn-outline-white">Get Started</a>
+                                <div class="home-wrapper home-wrapper-alt text-light">
+                                    <h1 class="fw-light">Welcome To Medhub Global</h1>
+                                    <h4>Revolutionizing Healthcare Procurement</h4>
+                                    <!-- <a href="" class="btn btn-primary">Get Started</a> -->
                                 </div>
                             </div>
                         </div>
@@ -93,170 +99,351 @@
         </section>
         <!-- END HOME -->
 
+        <!-- About Section -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <div class="title-box-icon  text-primary">
+                                <i class="pe-7s-medal"></i>
+                                <h3 class="title">About MedHub Global</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row margin-top-after-heading">
+                    <div class="col-lg-6">
+                        <div class="feat-description">
+                            <!-- <h4 class="text-muted">Praesent et viverra massa non varius magna eget nibh vitae velit posuere efficitur.</h4> -->
+                            <p class="text-muted">
+                                Imagine a world where healthcare providers, from major hospital networks to small clinics, have effortless access to the products they need. 
+                                A world where procurement challenges disappear, allowing the focus to remain on saving lives and enhancing well-being. Welcome to MedHub Global—a 
+                                platform designed to revolutionize healthcare procurement.
+                            </p>
+
+                            <a href="about-us.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <img src="images/MedHub/homepage/AboutMedHubGlobal.jpg" alt="img" class="img-fluid" />
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- About Section -->
+
         <!-- Features Alt -->
         <section class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-center">
-                            <div class="title-box-icon">
+                            <div class="title-box-icon  text-primary">
                                 <i class="pe-7s-medal"></i>
-                                <h3 class="title">Clean and Ultra Modern Design</h3>
+                                <h3 class="title">Why Choose MedHub Global</h3>
+                                <p>Effortless Procurement, Endless Possibilities - AI-Powered Tools for the Modern Marketplace</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end row -->
 
-                <div class="row">
-                    <div class="col-lg-5">
+                <div class="row margin-top-after-heading">
+                    <div class="col-lg-6">
                         <div class="feat-description">
-                            <h4 class="text-muted">Praesent et viverra massa non varius magna eget nibh vitae velit posuere efficitur.</h4>
+                            <h1 class=" text-primary">Simplicity Redefined</h1>
                             <p class="text-muted">
-                                The clean and well commented code allows easy customization of the theme.It's designed for describing your app, agency or business.We put a lot of effort in design, as it’s the most important ingredient of
-                                successful website.Sed ut perspiciatis unde omnis iste natus error sit.We put a lot of effort in design, as it’s the most important ingredient of successful website.
+                                At Medhub Global, we believe complexity has no place in healthcare. With intuitive tools, integrated logistics, and transparent systems, we transform 
+                                procurement into a seamless experience. Real-time updates and secure transactions? That’s just the beginning.
                             </p>
-
-                            <a href="" class="btn btn-primary">Learn More</a>
+                            <!-- <a href="about-us.html" class="btn btn-primary">Learn More</a> -->
                         </div>
                     </div>
 
-                    <div class="col-lg-7">
-                        <img src="images/macbook.png" alt="img" class="img-fluid" />
+                    <div class="col-lg-6">
+                        <img src="images/MedHub/homepage/AiPoweredBuyerSellerMatching.jpg" alt="img" class="img-fluid" />
                     </div>
                 </div>
-                <!-- end row -->
+                
+                <div class="row margin-top-between-row">
+                    <div class="col-lg-6">
+                        <img src="images/MedHub/homepage/ProcurementProcessAutomation.jpg" alt="img" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feat-description">
+                            <h1 class="text-primary">Streamlined Procurement Automation</h1>
+                            <p class="text-muted">
+                                Transform your procurement operations with seamless automation at every stage—from order initiation to payment completion. MedHub Global reduces human 
+                                errors, enhances accuracy, and improves operational efficiency through integrated systems and real-time updates, allowing you to focus on strategic goals.
+                            </p>
+                            <!-- <a href="about-us.html" class="btn btn-primary">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row margin-top-between-row">
+                    <div class="col-lg-6">
+                        <div class="feat-description">
+                            <h1 class="text-primary">Simplified Logistics</h1>
+                            <p class="text-muted">
+                                Simplify logistics with our platform's seamless integration of shipping providers, delivery tracking and customs documentation, ensuring a smooth global 
+                                procurement process.
+                            </p>
+                            <a class="btn btn-primary">Coming Soon</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <img src="images/MedHub/homepage/logistics.jpg" alt="img" class="img-fluid" />
+                    </div>
+                </div>
+                
+                <div class="row margin-top-between-row">
+                    <div class="col-lg-6">
+                        <img src="images/MedHub/homepage/InvoiceFactoring.jpg" alt="img" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feat-description">
+                            <h1 class="text-primary">Invoice Factoring</h1>
+                            <p class="text-muted">
+                                Boost your cash flow with ease. Sell your invoices to verified financiers directly through our platform and receive payments faster, ensuring smooth and 
+                                uninterrupted operations.
+                            </p>
+                            <a class="btn btn-primary">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row margin-top-between-row">
+                    <div class="col-lg-6">
+                        <div class="feat-description">
+                            <h1 class="text-primary">Secondary Marketplace for Distress Sales</h1>
+                            <p class="text-muted">
+                                Whether you're looking to offload surplus stock or purchase high-quality refurbished equipment at a fraction of the cost, our secondary marketplace offers 
+                                a solution that benefits both sellers and buyers and ensures that no inventory goes to waste.
+                            </p>
+                            <!-- <a href="about-us.html" class="btn btn-primary">Learn More</a> -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <img src="images/MedHub/homepage/SecondaryMarketplace.jpg" alt="img" class="img-fluid" />
+                    </div>
+                </div>
+                
             </div>
             <!-- end container -->
         </section>
         <!-- end features alt -->
 
-        <!-- Features -->
-        <section class="section bg-light" id="features">
+        <!-- Supplier Section -->
+        <section class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3 class="title">It's designed for describing your app, agency or business</h3>
-                        <p class="text-muted sub-title">
-                            The clean and well commented code allows easy customization of the theme.It's <br />
-                            designed for describing your app, agency or business.
-                        </p>
+                    <div class="col-lg-12 text-center  text-primary">
+                        <h3 class="title">Benefits of MedHub Global For Suppliers?</h3>
                     </div>
                 </div>
-                <!-- end row -->
 
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="features-box">
-                            <div class="mb-4">
-                                <i class="pe-7s-rocket"></i>
-                            </div>
-                            <h4 class="mb-3">Strategy Solutions</h4>
-                            <p class="text-muted">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="features-box">
-                            <div class="mb-4">
-                                <i class="pe-7s-science"></i>
-                            </div>
-                            <h4 class="mb-3">Digital Design</h4>
-                            <p class="text-muted">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin litera..</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="features-box">
-                            <div class="mb-4">
-                                <i class="pe-7s-display1"></i>
+                <div class="row margin-top-after-heading">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="row team text-center">
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12 single-column mt-4">
+                                <div class="single-item border p-3 shadow">
+                                  <div class="icon-box">
+                                    <img class="icon-img" src="images/MedHub/homepage/Expand Your Markets.svg" alt="">
+                                  </div>
+                                  <h4 class="mt-4 text-primary">Expand Your Market Reach</h4>
+                                  <div class="text mt-4">Connect with a global network of verified buyers, including hospitals, private clinics, chemists, and government authorities.</div>
+                                </div>
                             </div>
 
-                            <h4 class="mb-3">Analytics Solutions</h4>
-                            <p class="text-muted">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end row -->
-
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="features-box">
-                            <div class="mb-4">
-                                <i class="pe-7s-date"></i>
+                            <div class="col-lg-4 col-md-6 col-sm-12 single-column mt-4">
+                                <div class="single-item border p-3 shadow">
+                                  <div class="icon-box">
+                                    <img class="icon-img" src="images/MedHub/homepage/Reduce Idle Inventory.svg" alt="">
+                                  </div>
+                                  <h4 class="mt-4 text-primary">Reduce Idle Inventory</h4>
+                                  <div class="text mt-4">List surplus items for distress sales or sell refurbished medical equipment to buyers seeking reliable, budget-friendly solutions.</div>
+                                </div>
                             </div>
 
-                            <h4 class="mb-3">Strategy Solutions</h4>
-                            <p class="text-muted">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="features-box">
-                            <div class="mb-4">
-                                <i class="pe-7s-credit"></i>
+                            <div class="col-lg-4 col-md-6 col-sm-12 single-column mt-4">
+                                <div class="single-item border p-3 shadow">
+                                  <div class="icon-box">
+                                    <img class="icon-img" src="images/MedHub/homepage/Guaranteed Payments.svg" alt="">
+                                  </div>
+                                  <h4 class="mt-4 text-primary">Guaranteed Payments</h4>
+                                  <div class="text mt-4">Benefit from secure payment processes with the added convenience of optional invoice factoring, ensuring fast, reliable transactions.</div>
+                                </div>
                             </div>
-                            <h4 class="mb-3">Digital Design</h4>
-                            <p class="text-muted">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin litera..</p>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4">
-                        <div class="features-box">
-                            <div class="mb-4">
-                                <i class="pe-7s-headphones"></i>
+                            <!-- <div class="col-lg-4">
+                                <div class="team-member animated fadeInDown wow" data-wow-delay=".1s">
+                                    <i class="fa fa-medkit fa-10x text-primary rounded-circle" aria-hidden="true" style="font-size: 65px;"></i>
+                                    <i class="fa-solid fa-shop" aria-hidden="true"></i>
+                                    <img class="icon-img" src="images/MedHub/homepage/Expand Your Markets.svg" alt="">
+                                    <h4 class="mb-4 text-primary">Expand Your Market Reach</h4>
+                                    <p class="text-muted">Connect with a global network of verified buyers, including hospitals, private clinics, chemists, and government authorities.</p>
+                                </div>
                             </div>
-                            <h4 class="mb-3">Analytics Solutions</h4>
-                            <p class="text-muted">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+
+                            <div class="col-lg-4">
+                                <div class="team-member animated fadeInDown wow" data-wow-delay=".3s">
+                                    <i class="fa fa-medkit fa-10x text-primary rounded-circle" aria-hidden="true" style="font-size: 65px;"></i>
+                                    <img class="icon-img" src="images/MedHub/homepage/Reduce Idle Inventory.svg" alt="">
+                                    <h4 class="mb-4 text-primary">Reduce Idle Inventory</h4>
+                                    <p class="text-muted">List surplus items for distress sales or sell refurbished medical equipment to buyers seeking reliable, budget-friendly solutions.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="team-member animated fadeInDown wow" data-wow-delay=".5s">
+                                    <i class="fa fa-medkit fa-10x text-primary rounded-circle" aria-hidden="true" style="font-size: 65px;"></i>
+                                    <img class="icon-img" src="images/MedHub/homepage/Guaranteed Payments.svg" alt="">
+                                    <h4 class="mb-4 text-primary">Guaranteed Payments</h4>
+                                    <p class="text-muted">Benefit from secure payment processes with the added convenience of optional invoice factoring, ensuring fast, reliable transactions.</p>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-                <!-- end row -->
+
+                <div class="container text-center mt-5">
+                    <a href="contact-us.html" class="btn btn-primary">Request a Demo</a>
+                </div>
             </div>
-            <!-- end container -->
         </section>
-        <!-- end Features -->
+        <!-- Supplier Section -->
+
+        <!-- Buyer Section -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center text-primary">
+                        <h3 class="title">Benefits of MedHub Global For Buyers?</h3>
+                    </div>
+                </div>
+
+                <div class="row margin-top-after-heading">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="row team text-center">
+                            <div class="col-lg-4 col-md-6 col-sm-12 single-column mt-4">
+                                <div class="single-item border p-3 shadow">
+                                  <div class="icon-box">
+                                    <img class="icon-img" src="images/MedHub/homepage/Reliable SUppliers.svg" alt="">
+                                  </div>
+                                  <h4 class="mt-4 text-primary">Reliable Suppliers</h4>
+                                  <div class="text mt-4">>Access a global network of thoroughly vetted distributors and manufacturers, ensuring consistent quality and reliability 
+                                    across all your purchases.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 single-column mt-4">
+                                <div class="single-item border p-3 shadow">
+                                  <div class="icon-box">
+                                    <img class="icon-img" src="images/MedHub/homepage/Cost Managementy.svg" alt="">
+                                  </div>
+                                  <h4 class="mt-4 text-primary">Cost Management</h4>
+                                  <div class="text mt-4">Optimize your budget with AI-powered insights and smart tools that analyze pricing trends, helping you make informed decisions 
+                                    while staying within your financial goals.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 single-column mt-4">
+                                <div class="single-item border p-3 shadow">
+                                  <div class="icon-box">
+                                    <img class="icon-img" src="images/MedHub/homepage/No Supply Chain Disruptions.svg" alt="">
+                                  </div>
+                                  <h4 class="mt-4 text-primary">No Supply Chain Disruptions</h4>
+                                  <div class="text mt-4">Benefit from seamless order fulfillment with integrated logistics solutions designed to minimize delays, mitigate risks, 
+                                    and keep operations running smoothly.</div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-4">
+                                <div class="team-member animated fadeInDown wow" data-wow-delay=".1s">
+                                    <i class="fa fa-medkit fa-10x text-primary rounded-circle" aria-hidden="true" style="font-size: 65px;"></i>
+                                    <img class="icon-img" src="images/MedHub/homepage/Reliable SUppliers.svg" alt="">
+                                    <h4 class="mb-4 text-primary">Reliable Suppliers</h4>
+                                    <p class="text-muted">Access a global network of thoroughly vetted distributors and manufacturers, ensuring consistent quality and reliability 
+                                        across all your purchases.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="team-member animated fadeInDown wow" data-wow-delay=".3s">
+                                    <i class="fa fa-pie-chart text-primary rounded-circle" aria-hidden="true" style="font-size: 65px;"></i>
+                                    <img class="icon-img" src="images/MedHub/homepage/Cost Managementy.svg" alt="">
+                                    <h4 class="mb-4 text-primary">Cost Management</h4>
+                                    <p class="text-muted">Optimize your budget with AI-powered insights and smart tools that analyze pricing trends, helping you make informed decisions 
+                                        while staying within your financial goals.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="team-member animated fadeInDown wow" data-wow-delay=".5s">
+                                    <i class="fa fa-ticket text-primary rounded-circle" aria-hidden="true" style="font-size: 65px;"></i>
+                                    <img class="icon-img" src="images/MedHub/homepage/No Supply Chain Disruptions.svg" alt="">
+                                    <h4 class="mb-4 text-primary">No Supply Chain Disruptions</h4>
+                                    <p class="text-muted">Benefit from seamless order fulfillment with integrated logistics solutions designed to minimize delays, mitigate risks, 
+                                        and keep operations running smoothly.</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container text-center mt-5">
+                    <a href="contact-us.html" class="btn btn-primary">Request a Demo</a>
+                </div>
+            </div>
+        </section>
+        <!-- Buyer Section -->
 
         <!-- PRICING -->
         <section class="section" id="pricing">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3 class="title">Choose your perfect plan</h3>
+                    <div class="col-lg-12 text-center text-primary">
+                        <h3 class="title">Choose the Plan That Suits You Best</h3>
                         <p class="text-muted sub-title">
-                            The clean and well commented code allows easy customization of the theme.It's <br />
-                            designed for describing your app, agency or business.
+                           Experience the full power of MedHub Global with simple, transparent subscription plans designed to meet your needs. No hidden fees, no transaction 
+                           charges—just seamless healthcare procurement.
                         </p>
                     </div>
                 </div>
-                <!-- end row -->
 
-                <div class="row">
+                <div class="row margin-top-after-heading">
                     <div class="col-lg-10 offset-lg-1">
                         <div class="row">
-                            <!--Pricing Column-->
-                            <article class="col-lg-4 pricing-column">
+                            <article class="col-lg-6 pricing-column">
                                 <div class="inner-box">
                                     <div class="plan-header text-center">
-                                        <h3 class="plan-title">Basic</h3>
-                                        <h2 class="plan-price">$19</h2>
-                                        <div class="plan-duration">Per Month</div>
+                                        <h3 class="plan-title text-primary">Monthly</h3>
+                                        <h2 class="plan-price text-primary">$129</h2>
+                                        <div class="plan-duration text-primary">Per Month</div>
                                     </div>
                                     <ul class="plan-stats list-unstyled">
-                                        <li><i class="pe-7s-server"></i>10 GB Storege</li>
-                                        <li><i class="pe-7s-graph"></i>500 GB Bandwidth</li>
-                                        <li><i class="pe-7s-mail-open"></i>Email Support</li>
-                                        <li><i class="pe-7s-tools"></i>24x7 Support</li>
+                                        <li><i class="pe-7s-server"></i>Full access to the AI-powered marketplace</li>
+                                        <li><i class="pe-7s-graph"></i>No tranaction charge</li>
+                                        <li><i class="pe-7s-mail-open"></i> Procurement process automation tools</li>
+                                        <li><i class="pe-7s-tools"></i>Integrated logistics support</li>
+                                        <li><i class="pe-7s-tools"></i>Invoice factoring</li>
                                     </ul>
 
                                     <div class="text-center">
-                                        <a href="#" class="btn btn-primary">Signup Now</a>
+                                        <a href="pricing-plans.html" class="btn btn-primary">Get Started</a>
                                     </div>
                                 </div>
                             </article>
 
-                            <!--Pricing Column-->
-                            <article class="col-lg-4 pricing-column">
+                            <!-- <article class="col-lg-4 pricing-column">
                                 <div class="inner-box active">
                                     <div class="plan-header text-center">
                                         <h3 class="plan-title">Premium</h3>
@@ -274,230 +461,114 @@
                                         <a href="#" class="btn btn-primary">Signup Now</a>
                                     </div>
                                 </div>
-                            </article>
+                            </article> -->
 
-                            <!--Pricing Column-->
-                            <article class="col-lg-4 pricing-column">
+                            <article class="col-lg-6 pricing-column">
                                 <div class="inner-box">
                                     <div class="plan-header text-center">
-                                        <h3 class="plan-title">Developer</h3>
-                                        <h2 class="plan-price">$39</h2>
-                                        <div class="plan-duration">Per Month</div>
+                                        <h3 class="plan-title text-primary">Yearly Plan</h3>
+                                        <h2 class="plan-price text-primary">$99</h2>
+                                        <div class="plan-duration text-primary"> Per Month (billed annually)</div>
                                     </div>
                                     <ul class="plan-stats list-unstyled">
-                                        <li><i class="pe-7s-server"></i>10 GB Storege</li>
-                                        <li><i class="pe-7s-graph"></i>500 GB Bandwidth</li>
-                                        <li><i class="pe-7s-mail-open"></i>Email Support</li>
-                                        <li><i class="pe-7s-tools"></i>24x7 Support</li>
+                                        <li><i class="pe-7s-server"></i>All monthly plan benefits at a discounted rate</li>
+                                        <li><i class="pe-7s-graph"></i>Priority support for account</li>
+                                        <li><i class="pe-7s-mail-open"></i>Exclusive early access to new features</li>
+                                        <li><i class="pe-7s-tools"></i>Ideal for Businesses looking for cost-effective, long-term procurement solutions.</li>
                                     </ul>
 
                                     <div class="text-center">
-                                        <a href="#" class="btn btn-primary">Signup Now</a>
+                                        <a href="pricing-plans.html" class="btn btn-primary">Get Started</a>
                                     </div>
                                 </div>
                             </article>
                         </div>
                     </div>
-                    <!-- end col -->
                 </div>
-                <!-- end row -->
             </div>
-            <!-- end container -->
         </section>
         <!-- End Pricing -->
 
-        <!-- Clients -->
-        <section class="section bg-light" id="clients">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3 class="title">Trusted by Thousands</h3>
-                        <p class="text-muted sub-title">
-                            The clean and well commented code allows easy customization of the theme.It's <br />
-                            designed for describing your app, agency or business.
-                        </p>
-                    </div>
-                </div>
-                <!-- end row -->
-
-                <div class="row text-center">
-                    <div class="col-lg-12">
-                        <ul class="list-inline client-list">
-                            <li class="list-inline-item">
-                                <a href="" title="Microsoft"><img src="images/clients/microsoft.png" alt="clients" /></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="" title="Google"><img src="images/clients/google.png" alt="clients" /></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="" title="Instagram"><img src="images/clients/instagram.png" alt="clients" /></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="" title="Converse"><img src="images/clients/converse.png" alt="clients" /></a>
-                            </li>
-                        </ul>
-
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="testimonial-description text-start">
-                                    <p class="text-muted">
-                                        “ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
-                                        believable.”
-                                    </p>
-                                </div>
-
-                                <div class="testimonial-user-info user-info text-start">
-                                    <div class="testimonial-user-thumb user-thumb">
-                                        <img src="images/user.jpg" alt="user-thumb" />
-                                    </div>
-                                    <div class="testimonial-user-txt user-text">
-                                        <label class="testimonial-user-name user-name">Calebogden</label>
-                                        <p class="testimonial-user-position user-position text-muted">Another company , City</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <div class="testimonial-description text-start">
-                                    <p class="text-muted">
-                                        “ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
-                                        believable.”
-                                    </p>
-                                </div>
-
-                                <div class="testimonial-user-info user-info text-start">
-                                    <div class="testimonial-user-thumb user-thumb">
-                                        <img src="images/user2.jpg" alt="user-thumb" />
-                                    </div>
-                                    <div class="testimonial-user-txt user-text">
-                                        <label class="testimonial-user-name user-name">Dancounsell</label>
-                                        <p class="testimonial-user-position user-position text-muted">Another company , City</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <div class="testimonial-description text-start">
-                                    <p class="text-muted">
-                                        “ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
-                                        believable.”
-                                    </p>
-                                </div>
-
-                                <div class="testimonial-user-info user-info text-start">
-                                    <div class="testimonial-user-thumb user-thumb">
-                                        <img src="images/user3.jpg" alt="user-thumb" />
-                                    </div>
-                                    <div class="testimonial-user-txt user-text">
-                                        <label class="testimonial-user-name user-name">Indianguru</label>
-                                        <p class="testimonial-user-position user-position text-muted">Another company , City</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end Col -->
-                </div>
-                <!-- end row -->
-            </div>
-        </section>
-        <!--End  Clients -->
-
-        <!-- Subscribe -->
-        <section class="section bg-primary">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3 class="title text-white">Be engaged Newsletter</h3>
-                        <p class="text-white-70 sub-title">
-                            The clean and well commented code allows easy customization of the theme.It's <br />
-                            designed for describing your app, agency or business.
-                        </p>
-                    </div>
-                </div>
-                <!-- End row -->
-
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <form class="text-center" id="subscribe-form" method="get">
-                            <div class="form-group mb-0">
-                                <input type="email" class="form-control input-subscribe" id="mce-EMAIL" name="EMAIL" placeholder="Enter e-mail address" required />
-                                <label for="mce-EMAIL"></label>
-                            </div>
-
-                            <button type="submit" class="btn btn-white">Subscribe</button>
-                            <p class="text-white-70">
-                                <small>You can un-subscribe at any time.</small>
-                            </p>
-                        </form>
-                    </div>
-                </div>
-                <!-- End row -->
-            </div>
-            <!-- end container -->
-        </section>
-        <!-- End Subscribe -->
-
         <!-- FOOTER -->
-        <footer class="section bg-gray footer">
+        <footer class="section footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <h5>Zodkoo</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Features</a></li>
-                            <li><a href="">Team</a></li>
-                            <li><a href="">FAQ</a></li>
+                        <a href="index.html"><img style="width: 200px;" src="images/MedHub/FooterLogo.svg" alt=""></a>
+                        <p class="text mt-4">MedHub Global is a trading name of One Vision Technologies Ltd. All rights reserved.</p>
+                        <ul class="list-unstyled d-flex">
+                            <li><h6 class="text">Follow Us :</h6></li>
+                            <li class="mx-2"><a href="https://www.facebook.com/people/MedHub-Global/61570166584714/">
+                                <i class="fa fa-facebook text-primary" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="mx-2"><a href="https://x.com/medhubglobal">
+                                <i class="fa fa-twitter text-primary" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="mx-2"><a href="https://www.linkedin.com/company/medhub-global">
+                                <i class="fa fa-linkedin text-primary" aria-hidden="true"></i></a>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3">
-                        <h5>Social</h5>
+                        <h4 class="mb-4 text-primary">Quick Links</h4>
                         <ul class="list-unstyled">
-                            <li><a href="">Facebook</a></li>
-                            <li><a href="">Twitter</a></li>
-                            <li><a href="">Behance</a></li>
-                            <li><a href="">Dribbble</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="buyer.html">For Buyer</a></li>
+                            <li><a href="supplier.html">For Supplier</a></li>
+                            <li><a href="pricing-plans.html">Pricing Plans</a></li>
+                            <li><a href="contact-us.html">Request a Demo</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3">
-                        <h5>Support</h5>
+                        <h4 class="text-primary mb-4">Support</h4>
                         <ul class="list-unstyled">
-                            <li><a href="">Help & Support</a></li>
-                            <li><a href="">Privacy Policy</a></li>
-                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3">
-                        <h5>Contact</h5>
-                        <address>
-                            795 Folsom Ave, Suite 600<br />
-                            San Francisco, CA 94107<br />
-                            <abbr title="Phone">P:</abbr> (123) 456-7890<br />
-                            E: <a href="mailto:#">email@email.com</a>
-                        </address>
+                        <h4 class="text-primary mb-4">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
+                                <i class="fa fa-map-marker mt-1 text-primary" aria-hidden="true"></i>
+                                <p class="mx-3">
+                                    Regus, 3rd floor, News Building,<br />
+                                    3 London Bridge Street, London<br />
+                                    SE1 9SG, United Kingdom<br />
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone text-primary" aria-hidden="true"></i>
+                                <a href="contact-us.html" class="mx-2">Request Call Back</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope text-primary" aria-hidden="true"></i>
+                                <a href="mailto:connect@medhub.global" class="mx-2">connect@medhub.global</a>
+                            </li>
+                        </ul>                        
                     </div>
                 </div>
-                <!-- end row -->
 
                 <div class="row">
                     <div class="col-lg-12">
+                        <hr class="text-light border-2"/>
                         <div class="footer-alt text-center">
-                            <p class="text-muted mb-0"><script>document.write(new Date().getFullYear())</script> © Zodkoo</p>
+                            <!-- <p class="text-muted mb-0"><script>document.write(new Date().getFullYear())</script> © Zodkoo</p> -->
+                             &copy; 2025 <a href="#">medhubglobal.com</a>. All rights reserved
                         </div>
                     </div>
                 </div>
-                <!-- end row -->
             </div>
-            <!-- end container -->
         </footer>
         <!-- END FOOTER -->
 
         <!-- Back to top -->
-        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top-btn text-white px-1 rounded"><i class="pe-7s-angle-up"></i></a>
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top-btn text-primary px-1 rounded"><i class="pe-7s-angle-up"></i></a>
 
         <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
@@ -505,3 +576,212 @@
         <script src="js/app.js"></script>
     </body>
 </html>
+
+
+<!-- Features -->
+<!-- <section class="section bg-light" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="title">It's designed for describing your app, agency or business</h3>
+                <p class="text-muted sub-title">
+                    The clean and well commented code allows easy customization of the theme.It's <br />
+                    designed for describing your app, agency or business.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="features-box">
+                    <div class="mb-4">
+                        <i class="pe-7s-rocket"></i>
+                    </div>
+                    <h4 class="mb-3">Strategy Solutions</h4>
+                    <p class="text-muted">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="features-box">
+                    <div class="mb-4">
+                        <i class="pe-7s-science"></i>
+                    </div>
+                    <h4 class="mb-3">Digital Design</h4>
+                    <p class="text-muted">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin litera..</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="features-box">
+                    <div class="mb-4">
+                        <i class="pe-7s-display1"></i>
+                    </div>
+
+                    <h4 class="mb-3">Analytics Solutions</h4>
+                    <p class="text-muted">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="features-box">
+                    <div class="mb-4">
+                        <i class="pe-7s-date"></i>
+                    </div>
+
+                    <h4 class="mb-3">Strategy Solutions</h4>
+                    <p class="text-muted">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="features-box">
+                    <div class="mb-4">
+                        <i class="pe-7s-credit"></i>
+                    </div>
+                    <h4 class="mb-3">Digital Design</h4>
+                    <p class="text-muted">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin litera..</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="features-box">
+                    <div class="mb-4">
+                        <i class="pe-7s-headphones"></i>
+                    </div>
+                    <h4 class="mb-3">Analytics Solutions</h4>
+                    <p class="text-muted">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- end Features -->
+
+<!-- Clients -->
+<!-- <section class="section bg-light" id="clients">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="title">Trusted by Thousands</h3>
+                <p class="text-muted sub-title">
+                    The clean and well commented code allows easy customization of the theme.It's <br />
+                    designed for describing your app, agency or business.
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="list-inline client-list">
+                    <li class="list-inline-item">
+                        <a href="" title="Microsoft"><img src="images/clients/microsoft.png" alt="clients" /></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="" title="Google"><img src="images/clients/google.png" alt="clients" /></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="" title="Instagram"><img src="images/clients/instagram.png" alt="clients" /></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="" title="Converse"><img src="images/clients/converse.png" alt="clients" /></a>
+                    </li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="testimonial-description text-start">
+                            <p class="text-muted">
+                                “ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                                believable.”
+                            </p>
+                        </div>
+
+                        <div class="testimonial-user-info user-info text-start">
+                            <div class="testimonial-user-thumb user-thumb">
+                                <img src="images/user.jpg" alt="user-thumb" />
+                            </div>
+                            <div class="testimonial-user-txt user-text">
+                                <label class="testimonial-user-name user-name">Calebogden</label>
+                                <p class="testimonial-user-position user-position text-muted">Another company , City</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="testimonial-description text-start">
+                            <p class="text-muted">
+                                “ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                                believable.”
+                            </p>
+                        </div>
+
+                        <div class="testimonial-user-info user-info text-start">
+                            <div class="testimonial-user-thumb user-thumb">
+                                <img src="images/user2.jpg" alt="user-thumb" />
+                            </div>
+                            <div class="testimonial-user-txt user-text">
+                                <label class="testimonial-user-name user-name">Dancounsell</label>
+                                <p class="testimonial-user-position user-position text-muted">Another company , City</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="testimonial-description text-start">
+                            <p class="text-muted">
+                                “ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                                believable.”
+                            </p>
+                        </div>
+
+                        <div class="testimonial-user-info user-info text-start">
+                            <div class="testimonial-user-thumb user-thumb">
+                                <img src="images/user3.jpg" alt="user-thumb" />
+                            </div>
+                            <div class="testimonial-user-txt user-text">
+                                <label class="testimonial-user-name user-name">Indianguru</label>
+                                <p class="testimonial-user-position user-position text-muted">Another company , City</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!--End  Clients -->
+
+<!-- Subscribe -->
+<!-- <section class="section bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="title text-white">Be engaged Newsletter</h3>
+                <p class="text-white-70 sub-title">
+                    The clean and well commented code allows easy customization of the theme.It's <br />
+                    designed for describing your app, agency or business.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <form class="text-center" id="subscribe-form" method="get">
+                    <div class="form-group mb-0">
+                        <input type="email" class="form-control input-subscribe" id="mce-EMAIL" name="EMAIL" placeholder="Enter e-mail address" required />
+                        <label for="mce-EMAIL"></label>
+                    </div>
+
+                    <button type="submit" class="btn btn-white">Subscribe</button>
+                    <p class="text-white-70">
+                        <small>You can un-subscribe at any time.</small>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- End Subscribe -->
