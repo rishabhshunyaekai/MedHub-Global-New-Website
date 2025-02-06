@@ -7,10 +7,14 @@
 */
 
 
-.back-to-top:hover,.bg-custom,.btn-custom,.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover,
-.navbar-custom  {
+.back-to-top:hover,.bg-custom,.btn-custom,.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
   background-color: #282F86 !important;
 }
+
+/* .back-to-top:hover,.bg-custom,.btn-custom,.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover,
+.navbar-custom {
+  background-color: #282F86 !important;
+} */
 
 .btn-white-fill,.text-custom,.btn-white-bordered:hover,.btn-custom:hover,.features-box i,
 .pricing-column .plan-title {

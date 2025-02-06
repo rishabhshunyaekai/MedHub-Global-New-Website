@@ -22,13 +22,11 @@
     </head>
 
     <body data-bs-target=".navbar" data-bs-offset="72">
-        <!-- STRAT NAVBAR -->
+        
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-custom sticky-dark" id="navbar-sticky">
             <div class="container">
-                <!-- LOGO -->
                 <a href="index.html"><img style="width: 200px;" src="images/MedHub/logo.svg" alt=""></a>
 
-                <!-- Responsive menu button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -63,10 +61,9 @@
 
                     <ul class="nav navbar-nav navbar-right ms-auto">
                         <li class="nav-item">
-                            <a href="contact-us.html" class="btn btn-white navbar-btn nav-link">Request Demo</a>
+                            <a href="contact-us.html?contact-form=request-demo" class="btn btn-white navbar-btn nav-link">Request Demo</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <!-- <a href="" class="btn btn-white navbar-btn nav-link">Login <i class="fa fa-caret-down text-dark" aria-hidden="true"></i></a> -->
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
                             <ul class="dropdown-menu arrow" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="https://medhub.shunyaekai.com/buyer" target="_blank">Login as Buyer</a></li>
@@ -77,19 +74,16 @@
                 </div>
             </div>
         </nav>
-        <!-- END NAVBAR -->
 
-        <!-- Header title -->
         <section class="home bg-img-01" id="home">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
+                    <div class="col-lg-12">
                         <div class="home-fullscreen" id="home-fullscreen">
                             <div class="full-screen">
-                                <div class="home-wrapper home-wrapper-alt text-light">
-                                    <h1 class="fw-light">Contact Us</h1>
-                                    <!-- <h4>Revolutionizing Healthcare Procurement</h4> -->
-                                    <!-- <a href="" class="btn btn-primary">Get Started</a> -->
+                                <div class="homepage-wrapper homepage-wrapper-alt text-light">
+                                    <h1>Contact Us</h1>
+                                    <!-- <h4>Connect with buyers globally and streamline your sales process</h4> -->
                                 </div>
                             </div>
                         </div>
@@ -97,16 +91,9 @@
                 </div>
             </div>
         </section>
-        <!-- END Header title -->
 
-        <!-- Contact Form -->
-        <section class="section">
+        <section class="contact-section" id="form-section">
             <div class="container">
-                <!-- <div class="row">
-                    <div class="col-lg-12">
-                        <h4 class="title">Contact</h4>
-                    </div>
-                </div> -->
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-center">
@@ -117,25 +104,70 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="row margin-top-after-heading">
-                    <div class="col-lg-6">
-                        <div class="contact-form">
-                            <span id="error-msg"></span>
-                            <form method="post" name="myForm" onsubmit="return validateForm()">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="mb-4">
-                                            <input name="name" id="name" type="text" class="form-control" placeholder="Company name" />
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-sm-12 offset-lg-1 big-column">
+                        <div class="contact-form-area" id="contact-us">
+                            <div class="form-inner">
+                                <form method="post" action="/send-email" id="contact-form" class="default-form">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 column">
+                                            <div class="form-group">
+                                                <i class="fa fa-building text-primary" aria-hidden="true"></i>
+                                            <input type="text" class="input-shadow" name="companyname" placeholder="Company Name" required />
+                                            </div>
                                         </div>
-                                        <div class="mb-4">
-                                            <input name="name" id="name" type="text" class="form-control" placeholder="Name" />
+                                        <div class="col-lg-12 col-md-12 col-sm-12 column">
+                                            <div class="form-group">
+                                                <i class="fa fa-user text-primary" aria-hidden="true"></i>
+                                            <input type="text" class="input-shadow" name="username" placeholder="Name" required />
+                                            </div>
                                         </div>
-                                        <div class="mb-4">
-                                            <input name="email" id="email" type="email" class="form-control" placeholder="Email" />
+                                        <div class="col-lg-12 col-md-12 col-sm-12 column">
+                                            <div class="form-group">
+                                                <i class="fa fa-envelope text-primary" aria-hidden="true"></i>
+                                            <input type="email" class="input-shadow" name="email" placeholder="Email" required />
+                                            </div>
                                         </div>
-                                        <div class="mb-4">
-                                            <select id="customDropdown" class="form-control" name="subject" required>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 column">
+                                            <div class="form-group">
+                                                <div class="custom-dropdown-container">
+                                                    <select id="customDropdown" class="input-shadow" name="subject" required>
+                                                    <option value="" disabled selected>Contact Reason</option>
+                                                    <option value="buyer-interest">Buyer Interest</option>
+                                                    <option value="supplier-interest">Supplier Interest</option>
+                                                    <option value="Both Buyer & Supplier Interest">Both Buyer & Supplier Interest</option>
+                                                    <option value="request-call-back">Request Call Back</option>
+                                                    <option value="request-demo">Request Demo</option>
+                                                    <option value="general-enquiry">General Enquiry</option>
+                                                    <option value="partner-with-us">Partner with us</option>
+                                                    <option value="investor-relations">Investor Relations</option>
+                                                    </select>
+                                                </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 column">
+                                            <div class="form-group">
+                                                <i class="fa fa-phone text-primary" aria-hidden="true"></i>
+                                                <input type="text" class="input-shadow" name="phone" placeholder="Phone" required pattern="[0-9]*" maxlength="12"
+                                                    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 12);" />
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-6 col-md-12 col-sm-12 column">
+                                            <div class="form-group">
+                                                <i class="fa fa-user text-primary" aria-hidden="true"></i>
+                                            <input type="text" class="input-shadow" name="username" placeholder="Name" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12 column">
+                                            <div class="form-group">
+                                                <i class="fa fa-envelope text-primary" aria-hidden="true"></i>
+                                            <input type="email" class="input-shadow" name="email" placeholder="Email" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12 column">
+                                            <div class="form-group">
+                                            <div class="custom-dropdown-container">
+                                                <select id="customDropdown" class="input-shadow" name="subject" required>
                                                 <option value="" disabled selected>Contact Reason</option>
                                                 <option value="buyer-interest">Buyer Interest</option>
                                                 <option value="supplier-interest">Supplier Interest</option>
@@ -145,58 +177,49 @@
                                                 <option value="general-enquiry">General Enquiry</option>
                                                 <option value="partner-with-us">Partner with us</option>
                                                 <option value="investor-relations">Investor Relations</option>
-                                              </select>
+                                                </select>
+                                            </div>
+                                            </div>
                                         </div>
-                                        <div class="mb-4">
-                                            <input name="email" id="email" type="text" class="form-control" placeholder="Phone" />
+                                        <div class="col-lg-6 col-md-12 col-sm-12 column">
+                                            <div class="form-group">
+                                                <i class="fa fa-phone text-primary" aria-hidden="true"></i>
+                                                <input type="text" class="input-shadow" name="phone" placeholder="Phone" required pattern="[0-9]*" maxlength="12"
+                                                    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 12);" />
+                                            </div>
+                                        </div> -->
+                                        
+                                        <div class="col-lg-12 col-md-12 col-sm-12 column">
+                                            <div class="form-group">
+                                            <textarea name="message" class="input-shadow" placeholder="Write your message here"></textarea>
+                                            </div>
                                         </div>
-                                        <div class="mb-4">
-                                            <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Write your message here"></textarea>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 column">
+                                            <div class="form-checkbox">
+                                            <label class="checkbox-label">
+                                                <input id="subscribeCheckbox" name="checkbox" type="checkbox"
+                                                onchange="handleCheckboxChange(event)">
+                                                <span>Subscribe to our mailing list and updates</span>
+                                            </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 text-center">
+                                                <button type="submit" class="submitBnt btn btn-primary" id="submit-button" name="submit-form">
+                                                    Submit Now
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-12 text-center">
-                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary" value="Submit" />
-                                    </div>
-                                </div>
-                            </form>   
-                        </div>                     
-                    </div>
-
-                    <div class="col-lg-4 offset-lg-1">
-                        <div class="contact-box">
-                            <div class="contact-detail">
-                                <i class="pe-7s-map-marker text-primary"></i>
-                                <address>
-                                    Regus, 3rd floor, News Building,<br />
-                                    3 London Bridge Street, London<br />
-                                    SE1 9SG, United Kingdom<br />
-                                </address>
-                            </div>
-
-                            <!-- <div class="contact-detail">
-                                <i class="pe-7s-phone"></i>
-                                <p>
-                                    (120) 456-789-123
-                                </p>
-                            </div> -->
-
-                            <div class="contact-detail">
-                                <i class="pe-7s-mail-open-file text-primary"></i>
-                                <p>
-                                    <a href="mailto:connect@medhub.global">connect@medhub.global</a>
-                                </p>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Contact Form -->
 
-        <!-- map-section -->
         <section class="google-map-container">
             <iframe class="google-map" id="contact-google-map" data-map-lat="51.5045" data-map-lng="-0.0865"
                 data-icon-path="images/icons/map-marker.png" data-map-title="London Bridge, London, United Kingdom"
@@ -207,9 +230,7 @@
                 width="100%" height="550" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <!-- map-section end -->
-
-        <!-- FOOTER -->
+        
         <footer class="section footer">
             <div class="container">
                 <div class="row">
@@ -218,14 +239,20 @@
                         <p class="text mt-4">MedHub Global is a trading name of One Vision Technologies Ltd. All rights reserved.</p>
                         <ul class="list-unstyled d-flex">
                             <li><h6 class="text">Follow Us :</h6></li>
-                            <li class="mx-2"><a href="https://www.facebook.com/people/MedHub-Global/61570166584714/">
-                                <i class="fa fa-facebook text-primary" aria-hidden="true"></i></a>
+                            <li class=""><a href="https://www.facebook.com/medhub.global/">
+                                <i class="mx-2 fa fa-facebook text-primary" aria-hidden="true"></i></a>
                             </li>
-                            <li class="mx-2"><a href="https://x.com/medhubglobal">
-                                <i class="fa fa-twitter text-primary" aria-hidden="true"></i></a>
+                            <li class=""><a href="https://x.com/medhubglobal">
+                                <i class="mx-2 fa fa-twitter text-primary" aria-hidden="true"></i></a>
                             </li>
-                            <li class="mx-2"><a href="https://www.linkedin.com/company/medhub-global">
-                                <i class="fa fa-linkedin text-primary" aria-hidden="true"></i></a>
+                            <li class=""><a href="https://www.linkedin.com/company/medhub-global/">
+                                <i class="mx-2 fa fa-linkedin text-primary" aria-hidden="true"></i></a>
+                            </li>
+                            <li class=""><a href="https://www.youtube.com/@medhub.global">
+                                <i class="mx-2 fa fa-youtube-play text-primary" aria-hidden="true"></i></a>
+                            </li>
+                            <li class=""><a href="https://www.instagram.com/medhubglobal/">
+                                <i class="mx-2 fa fa-instagram text-primary" aria-hidden="true"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -237,7 +264,7 @@
                             <li><a href="buyer.html">For Buyer</a></li>
                             <li><a href="supplier.html">For Supplier</a></li>
                             <li><a href="pricing-plans.html">Pricing Plans</a></li>
-                            <li><a href="contact-us.html">Request a Demo</a></li>
+                            <li><a href="contact-us.html?contact-form=request-demo">Request a Demo</a></li>
                         </ul>
                     </div>
 
@@ -278,23 +305,140 @@
                     <div class="col-lg-12">
                         <hr class="text-light border-2"/>
                         <div class="footer-alt text-center">
-                            <!-- <p class="text-muted mb-0"><script>document.write(new Date().getFullYear())</script> © Zodkoo</p> -->
-                             &copy; 2025 <a href="#">medhubglobal.com</a>. All rights reserved
+                             &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">medhubglobal.com</a>. All rights reserved
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- END FOOTER -->
 
-        <!-- Back to top -->
         <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top-btn text-white px-1 rounded"><i class="pe-7s-angle-up"></i></a>
 
-        <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- Main Js -->
         <script src="js/app.js"></script>
     </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/validation.js"></script>
+
+    <script>
+        function handleCheckboxChange(event) {
+          const isChecked = event.target.checked;
+          const value = isChecked ? 1 : 0;
+        }
+        // End the dropdown js code
+        document.addEventListener("DOMContentLoaded", () => {
+          const form = $("#contact-form");
+          const submitButton = document.getElementById("submit-button");
+    
+          // Form validation using jQuery Validate
+          form.validate({
+            rules: {
+              username: {
+                required: true,
+              },
+              email: {
+                required: true,
+                email: true,
+              },
+              phone: {
+                required: true,
+                digits: true,
+                maxlength: 12,
+              },
+              subject: {
+                required: true,
+              },
+              companyname:{
+                required:true,
+              }
+            },
+          });
+    
+          // Handle form submission
+          form.on("submit", async (event) => {
+            event.preventDefault();
+            if (form.valid()) {
+              submitButton.innerHTML = `<span class="spinner-border mx-1" role="status" aria-hidden="true"></span> Submitting....`;
+              submitButton.disabled = true;
+    
+              const formData = new FormData(form[0]);
+              const formObject = Object.fromEntries(formData.entries());
+    
+              try {
+                const response = await fetch("/send-email", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(formObject),
+                });
+    
+                const responseData = await response.json();
+    
+                // Display SweetAlert and reset form on close
+                Swal.fire({
+                  title: response.ok ? "Success" : "Error",
+                  text: responseData.message || (response.ok ? "Thank you! We have received your details and will get back to you shortly. " : "Failed to send email"),
+                  icon: response.ok ? "success" : "error",
+                  timer: 3000,
+                  showConfirmButton: true,
+                }).then(() => {
+                  if (response.ok) {
+                    form[0].reset();
+                  }
+                  submitButton.innerHTML = "Submit Now";
+                  submitButton.disabled = false;
+                });
+              } catch (error) {
+                Swal.fire({
+                  title: "Error",
+                  text: error.message,
+                  icon: "error",
+                  timer: 3000,
+                  showConfirmButton: true,
+                }).then(() => {
+                  submitButton.innerHTML = "Submit Now";
+                  submitButton.disabled = false;
+                });
+              }
+            }
+          });
+        });
+    </script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const requestDemo = urlParams.get("contact-form");
+        const formSection = document.getElementById("contact-us");
+        const dropdown = document.getElementById("customDropdown");
+        
+        if (requestDemo === "request-demo") {
+        dropdown.value = "request-demo";
+            window.location.href = '#form-section';
+        // if(window.location.href.includes(requestDemo))
+        // {
+        //     $(document).scrollTop(700);
+        // }
+        } else {
+        requestDemo.value = "";
+        }
+    });
+    </script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const navbarCustom = document.querySelector(".navbar-custom");
+
+        navbarToggler.addEventListener("click", function () {
+            navbarCustom.classList.toggle("active");
+            });
+        });
+    </script>
 </html>
 
 <!-- CLIENTS -->
@@ -331,3 +475,92 @@
     </div>
 </section> -->
 <!-- END CLIENTS -->
+
+<!-- Contact Form -->
+<!-- <section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <div class="title-box-icon text-primary">
+                        <i class="pe-7s-medal"></i>
+                        <h3 class="title">Contact</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row margin-top-after-heading">
+            <div class="col-lg-6">
+                <div class="contact-form">
+                    <span id="error-msg"></span>
+                    <form method="post" name="myForm" onsubmit="return validateForm()">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="mb-4">
+                                    <input name="name" id="name" type="text" class="form-control" placeholder="Company name" />
+                                </div>
+                                <div class="mb-4">
+                                    <input name="name" id="name" type="text" class="form-control" placeholder="Name" />
+                                </div>
+                                <div class="mb-4">
+                                    <input name="email" id="email" type="email" class="form-control" placeholder="Email" />
+                                </div>
+                                <div class="mb-4">
+                                    <select id="customDropdown" class="form-control" name="subject" required>
+                                        <option value="" disabled selected>Contact Reason</option>
+                                        <option value="buyer-interest">Buyer Interest</option>
+                                        <option value="supplier-interest">Supplier Interest</option>
+                                        <option value="Both Buyer & Supplier Interest">Both Buyer & Supplier Interest</option>
+                                        <option value="request-call-back">Request Call Back</option>
+                                        <option value="request-demo">Request Demo</option>
+                                        <option value="general-enquiry">General Enquiry</option>
+                                        <option value="partner-with-us">Partner with us</option>
+                                        <option value="investor-relations">Investor Relations</option>
+                                        </select>
+                                </div>
+                                <div class="mb-4">
+                                    <input name="email" id="email" type="text" class="form-control" placeholder="Phone" />
+                                </div>
+                                <div class="mb-4">
+                                    <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Write your message here"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary" value="Submit" />
+                            </div>
+                        </div>
+                    </form>   
+                </div>                     
+            </div>
+
+            <div class="col-lg-4 offset-lg-1">
+                <div class="contact-box">
+                    <div class="contact-detail">
+                        <i class="pe-7s-map-marker text-primary"></i>
+                        <address>
+                            Regus, 3rd floor, News Building,<br />
+                            3 London Bridge Street, London<br />
+                            SE1 9SG, United Kingdom<br />
+                        </address>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="pe-7s-phone"></i>
+                        <p>
+                            (120) 456-789-123
+                        </p>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="pe-7s-mail-open-file text-primary"></i>
+                        <p>
+                            <a href="mailto:connect@medhub.global">connect@medhub.global</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->

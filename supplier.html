@@ -22,7 +22,7 @@
     </head>
 
     <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="72">
-        <!-- STRAT NAVBAR -->
+        
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-custom sticky-dark" id="navbar-sticky">
             <div class="container">
                 <a href="index.html"><img style="width: 200px;" src="images/MedHub/logo.svg" alt=""></a>
@@ -61,10 +61,9 @@
 
                     <ul class="nav navbar-nav navbar-right ms-auto">
                         <li class="nav-item">
-                            <a href="contact-us.html" class="btn btn-white navbar-btn nav-link">Request Demo</a>
+                            <a href="contact-us.html?contact-form=request-demo" class="btn btn-white navbar-btn nav-link">Request Demo</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <!-- <a href="" class="btn btn-white navbar-btn nav-link">Login <i class="fa fa-caret-down text-dark" aria-hidden="true"></i></a> -->
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
                             <ul class="dropdown-menu arrow" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="https://medhub.shunyaekai.com/buyer" target="_blank">Login as Buyer</a></li>
@@ -75,17 +74,15 @@
                 </div>
             </div>
         </nav>
-        <!-- END NAVBAR -->
 
-        <!-- Hero Image -->
         <section class="home bg-img-01" id="home">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
+                    <div class="col-lg-12">
                         <div class="home-fullscreen" id="home-fullscreen">
                             <div class="full-screen">
-                                <div class="home-wrapper home-wrapper-alt text-light">
-                                    <h1 class="fw-light">MedHub Global For Suppliers</h1>
+                                <div class="homepage-wrapper homepage-wrapper-alt text-light">
+                                    <h1>MedHub Global <br>For Suppliers</h1>
                                     <h4>Connect with buyers globally and streamline your sales process</h4>
                                 </div>
                             </div>
@@ -94,13 +91,31 @@
                 </div>
             </div>
         </section>
-        <!-- END Hero Image -->
+        <!-- <section class="home bg-img-01" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="home-fullscreen" id="home-fullscreen">
+                            <div class="full-screen">
+                                <div class="home-wrapper home-wrapper-alt text-light">
+                                    <h1>MedHub Global For Suppliers</h1>
+                                    <h4>Connect with buyers globally and streamline your sales process</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
 
-        <!-- Supplier History -->
         <section class="section">
             <div class="container">
                 <div class="row mt-5">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-lg-1 order-md-2 order-sm-2">
+                        <img src="images/MedHub/Sellers/Connectwithbuyers.jpg" alt="img" class="img-fluid" />
+                    </div>
+
+                    <div class="col-lg-6 order-lg-2 order-md-1 order-sm-1">
                         <div class="feat-description">
                             <h1 class="text-primary">Connect with Global Buyers and Streamline Your Sales Process</h1>
                             <p class="text-muted">
@@ -112,16 +127,10 @@
                             </p>
                         </div>
                     </div>
-
-                    <div class="col-lg-6">
-                        <img src="images/MedHub/Sellers/Connectwithbuyers.jpg" alt="img" class="img-fluid" />
-                    </div>
                 </div>
             </div>
         </section>
-        <!-- Supplier History end -->
 
-        <!-- feature-section -->
         <section class="section">
             <div class="container">
                 <div class="row mt-5">
@@ -130,47 +139,54 @@
                     </div> -->
                     <div class="col-md-12 col-sm-12">
                         <div class="row">
-                            <h2 class="text-primary text-center">How It Works for Suppliers</h2>
-                        </div>
-                        <div class="row team margin-top-after-heading">
-                            <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                <div class="single-item border p-5 shadow">
-                                  <div class="icon-box text-center">
-                                    <img src="images/MedHub/Sellers/Variety of Products.svg" alt="img" class="img-fluid" />
-                                    <h4 class="mt-4 text-primary">Wide Range of Products</h4>
-                                  </div>
-                                  <div class="text mt-5">List new, surplus, or refurbished items on the marketplace to quickly move idle inventory and reach more buyers.</div>
+                            <div class="col-lg-12">
+                                <div class="text-center">
+                                    <div class="title-box-icon  text-primary">
+                                        <i class="pe-7s-medal"></i>
+                                        <h3 class="title">How It Works for Suppliers</h3>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                <div class="single-item border p-5 shadow">
+                        </div>
+                        <div class="row margin-top-after-heading">
+                            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                                <div class="single-item p-5">
                                   <div class="icon-box text-center">
-                                    <img src="images/MedHub/Sellers/Negotiate and Close Deals.svg" alt="img" class="img-fluid" />
+                                    <img class="icon-img" src="images/MedHub/Sellers/Variety of Products.svg" alt="img" />
+                                    <h4 class="mt-4 text-primary">Wide Range of Products</h4>
+                                  </div>
+                                  <div class="text mt-5 text-center">List new surplus, or refurbished items on the marketplace to quickly move idle inventory and reach more buyers.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                                <div class="single-item p-5">
+                                  <div class="icon-box text-center">
+                                    <img class="icon-img" src="images/MedHub/Sellers/Negotiate and Close Deals.svg" alt="img" />
                                     <h4 class="mt-4 text-primary">Negotiate and Close Deals</h4>
                                   </div>
-                                  <div class="text mt-5">Use our secure platform to connect with buyers, negotiate terms, and finalize transactions with confidence.</div>
+                                  <div class="text mt-5 text-center">Use our secure platform to connect with buyers, negotiate terms, and finalize transactions with confidence.</div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row team mt-4">
-                            <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                <div class="single-item border p-5 shadow">
+                            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                                <div class="single-item p-5">
                                   <div class="icon-box text-center">
-                                    <img src="images/MedHub/Sellers/noun-products-2804222.svg" alt="img" class="img-fluid" />
+                                    <img class="icon-img" src="images/MedHub/Sellers/noun-products-2804222.svg" alt="img" />
                                     <h4 class="mt-4 text-primary">Select and Manage Logistics</h4>
                                   </div>
-                                  <div class="text mt-5">Choose from a variety of logistics services directly on the platform to ensure cost-effective and efficient delivery of 
+                                  <div class="text mt-5 text-center">Choose from a variety of logistics services directly on the platform to ensure cost-effective and efficient delivery of 
                                     your products.</div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                <div class="single-item border p-5 shadow">
+                            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                                <div class="single-item p-5">
                                   <div class="icon-box text-center">
-                                    <img src="images/MedHub/Sellers/Ensure Timely Payments.svg" alt="img" class="img-fluid" />
+                                    <img class="icon-img" src="images/MedHub/Sellers/Ensure Timely Payments.svg" alt="img" />
                                     <h4 class="mt-4 text-primary">Ensure Timely Payments</h4>
                                   </div>
-                                  <div class="text mt-5">With invoice factoring, sell your invoices to verified financiers and get paid instantly, ensuring smooth cash flow.</div>
+                                  <div class="text mt-5 text-center">With invoice factoring, sell your invoices to verified financiers and get paid instantly, ensuring smooth cash flow.</div>
                                 </div>
                             </div>
                         </div>
@@ -178,41 +194,24 @@
                 </div>
             </div>
         </section>
-        <!-- feature-section -->
 
-        <!-- OUR VALUE -->
-        <section class="container-fluid">
-            <div class="row margin-0 wide-img-showcase-row">
-                <div class="col-lg-6 bg-light">
-                    <div class="about-detail-img-box">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="text-center">
-                                    <div class="title-box-icon title-about text-primary">
-                                        <i class="pe-7s-safe"></i>
-                                        <h3 class="title">Ready to Sell smarter with Medhub Global</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-8 offset-lg-2">
-                                <div class="feat-description text-center">
-                                    <p class="text-muted">Join today to optimize your sales process and connect with a global network of verified buyers.</p>
-                                    <a href="contact-us.html" class="btn btn-primary mt-4">Submit Interest</a>
-                                </div>
-                            </div>
-                        </div>
+        <section class="section">
+            <div class="px-4 pt-5 my-5 text-center border-bottom bg-primary">
+                <h1 class="display-4 fw-bold text-white">Ready to Sell smarter with Medhub Global</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="text-light m-5">Join today to optimize your sales process and connect with a global network of verified buyers.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                        <a href="contact-us.html" class="btn btn-white mt-2 mb-3">Submit Interest</a>
                     </div>
                 </div>
-
-                <div class="col-lg-6 offset-lg-6 no-padding img-2"></div>
+                <div class="overflow-hidden" style="max-height: 50vh;">
+                    <div class="container px-5">
+                        <img src="images/MedHub/Sellers/SellSmarter.jpg" class="img-fluid border rounded-3 shadow-lg" alt="Example image" width="700" height="500" loading="lazy">
+                    </div>
+                </div>
             </div>
         </section>
-        <!-- End OUR VALUE -->
 
-        <!-- FOOTER -->
         <footer class="section footer">
             <div class="container">
                 <div class="row">
@@ -221,14 +220,20 @@
                         <p class="text mt-4">MedHub Global is a trading name of One Vision Technologies Ltd. All rights reserved.</p>
                         <ul class="list-unstyled d-flex">
                             <li><h6 class="text">Follow Us :</h6></li>
-                            <li class="mx-2"><a href="https://www.facebook.com/people/MedHub-Global/61570166584714/">
-                                <i class="fa fa-facebook text-primary" aria-hidden="true"></i></a>
+                            <li class=""><a href="https://www.facebook.com/medhub.global/">
+                                <i class="mx-2 fa fa-facebook text-primary" aria-hidden="true"></i></a>
                             </li>
-                            <li class="mx-2"><a href="https://x.com/medhubglobal">
-                                <i class="fa fa-twitter text-primary" aria-hidden="true"></i></a>
+                            <li class=""><a href="https://x.com/medhubglobal">
+                                <i class="mx-2 fa fa-twitter text-primary" aria-hidden="true"></i></a>
                             </li>
-                            <li class="mx-2"><a href="https://www.linkedin.com/company/medhub-global">
-                                <i class="fa fa-linkedin text-primary" aria-hidden="true"></i></a>
+                            <li class=""><a href="https://www.linkedin.com/company/medhub-global/">
+                                <i class="mx-2 fa fa-linkedin text-primary" aria-hidden="true"></i></a>
+                            </li>
+                            <li class=""><a href="https://www.youtube.com/@medhub.global">
+                                <i class="mx-2 fa fa-youtube-play text-primary" aria-hidden="true"></i></a>
+                            </li>
+                            <li class=""><a href="https://www.instagram.com/medhubglobal/">
+                                <i class="mx-2 fa fa-instagram text-primary" aria-hidden="true"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -240,7 +245,7 @@
                             <li><a href="buyer.html">For Buyer</a></li>
                             <li><a href="supplier.html">For Supplier</a></li>
                             <li><a href="pricing-plans.html">Pricing Plans</a></li>
-                            <li><a href="contact-us.html">Request a Demo</a></li>
+                            <li><a href="contact-us.html?contact-form=request-demo">Request a Demo</a></li>
                         </ul>
                     </div>
 
@@ -281,21 +286,57 @@
                     <div class="col-lg-12">
                         <hr class="text-light border-2"/>
                         <div class="footer-alt text-center">
-                            <!-- <p class="text-muted mb-0"><script>document.write(new Date().getFullYear())</script> © Zodkoo</p> -->
-                             &copy; 2025 <a href="#">medhubglobal.com</a>. All rights reserved
+                             &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">medhubglobal.com</a>. All rights reserved
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- END FOOTER -->
 
-        <!-- Back to top -->
         <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top-btn text-white px-1 rounded"><i class="pe-7s-angle-up"></i></a>
 
-        <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- Main Js -->
         <script src="js/app.js"></script>
     </body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const navbarCustom = document.querySelector(".navbar-custom");
+
+        navbarToggler.addEventListener("click", function () {
+            navbarCustom.classList.toggle("active");
+            });
+        });
+    </script>
 </html>
+
+<!-- <section class="container-fluid">
+    <div class="row margin-0 wide-img-showcase-row">
+        <div class="col-lg-6 bg-light">
+            <div class="about-detail-img-box">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <div class="title-box-icon title-about text-primary">
+                                <i class="pe-7s-safe"></i>
+                                <h3 class="title">Ready to Sell smarter with Medhub Global</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="feat-description text-center">
+                            <p class="text-muted">Join today to optimize your sales process and connect with a global network of verified buyers.</p>
+                            <a href="contact-us.html" class="btn btn-primary mt-4">Submit Interest</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 offset-lg-6 no-padding img-2"></div>
+    </div>
+</section> -->

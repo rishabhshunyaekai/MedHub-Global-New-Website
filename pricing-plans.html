@@ -22,13 +22,11 @@
     </head>
 
     <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="72">
-        <!-- STRAT NAVBAR -->
+        
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-custom sticky-dark" id="navbar-sticky">
             <div class="container">
-                <!-- LOGO -->
                 <a href="index.html"><img style="width: 200px;" src="images/MedHub/logo.svg" alt=""></a>
 
-                <!-- Responsive menu button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -63,10 +61,9 @@
 
                     <ul class="nav navbar-nav navbar-right ms-auto">
                         <li class="nav-item">
-                            <a href="contact-us.html" class="btn btn-white navbar-btn nav-link">Request Demo</a>
+                            <a href="contact-us.html?contact-form=request-demo" class="btn btn-white navbar-btn nav-link">Request Demo</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <!-- <a href="" class="btn btn-white navbar-btn nav-link">Login <i class="fa fa-caret-down text-dark" aria-hidden="true"></i></a> -->
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
                             <ul class="dropdown-menu arrow" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="https://medhub.shunyaekai.com/buyer" target="_blank">Login as Buyer</a></li>
@@ -77,19 +74,16 @@
                 </div>
             </div>
         </nav>
-        <!-- END NAVBAR -->
 
-        <!-- HOME -->
         <section class="home bg-img-01" id="home">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
+                    <div class="col-lg-12">
                         <div class="home-fullscreen" id="home-fullscreen">
                             <div class="full-screen">
-                                <div class="home-wrapper home-wrapper-alt text-light">
-                                    <h1 class="fw-light">Pricing</h1>
-                                    <!-- <h4>Revolutionizing Healthcare Procurement</h4> -->
-                                    <!-- <a href="" class="btn btn-primary">Get Started</a> -->
+                                <div class="homepage-wrapper homepage-wrapper-alt text-light">
+                                    <h1>Pricing</h1>
+                                    <h4>Reach out to the world’s most reliable IT services</h4>
                                 </div>
                             </div>
                         </div>
@@ -97,38 +91,43 @@
                 </div>
             </div>
         </section>
-        <!-- END HOME -->
 
-        <!-- PRICING -->
         <section class="section" id="pricing">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3 class="title text-primary">Choose the Plan That Suits You Best</h3>
-                        <p class="text-muted sub-title margin-top-after-heading">
-                           Experience the full power of MedHub Global with simple, transparent subscription plans designed to meet your needs. No hidden fees, no transaction 
-                           charges—just seamless healthcare procurement.
-                        </p>
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <div class="title-box-icon  text-primary">
+                                <i class="pe-7s-medal"></i>
+                                <h3 class="title">Choose the Plan That Suits You Best</h3>
+                            </div>
+                            <p class="text-muted sub-title">
+                                Experience the full power of MedHub Global with simple, transparent subscription plans designed to meet your needs. No hidden fees, no transaction 
+                                charges—just seamless healthcare procurement.
+                             </p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
+                
+                <div class="row margin-top-after-heading">
+                    <div class="col-lg-12">
                         <div class="row">
                             <article class="col-lg-6 pricing-column">
                                 <div class="inner-box">
                                     <div class="plan-header text-center">
-                                        <h3 class="plan-title text-primary">Monthly</h3>
+                                        <h3 class="plan-title text-primary">Monthly Plan</h3>
                                         <h2 class="plan-price text-primary">$129</h2>
                                         <div class="plan-duration text-primary">Per Month</div>
                                     </div>
+                                    <p class="text-muted">For Buyer & Supplier</p>
                                     <ul class="plan-stats list-unstyled">
-                                        <li><i class="pe-7s-server"></i>Full access to the AI-powered marketplace</li>
-                                        <li><i class="pe-7s-graph"></i>No tranaction charge</li>
-                                        <li><i class="pe-7s-mail-open"></i> Procurement process automation tools</li>
-                                        <li><i class="pe-7s-tools"></i>Integrated logistics support</li>
-                                        <li><i class="pe-7s-tools"></i>Invoice factoring</li>
+                                        <li><i class="fa fa-forward text-primary" aria-hidden="true"></i>Full access to the AI-powered marketplace</li>
+                                        <li><i class="fa fa-forward text-primary" aria-hidden="true"></i>No transaction charge</li>
+                                        <li><i class="fa fa-forward text-primary" aria-hidden="true"></i>Procurement process automation tools</li>
+                                        <li><i class="fa fa-forward text-primary" aria-hidden="true"></i>Integrated logistics support</li>
+                                        <li><i class="fa fa-forward text-primary" aria-hidden="true"></i>Invoice factoring</li>
                                     </ul>
+                                    <p class="text-muted">Ideal for Buyers and sellers who want flexibility without a long-term commitment.</p>
 
                                     <div class="text-center">
                                         <a href="pricing-plans.html" class="btn btn-primary">Get Started</a>
@@ -163,12 +162,13 @@
                                         <h2 class="plan-price text-primary">$99</h2>
                                         <div class="plan-duration text-primary"> Per Month (billed annually)</div>
                                     </div>
+                                    <p class="text-muted">For Buyer & Supplier</p>
                                     <ul class="plan-stats list-unstyled">
-                                        <li><i class="pe-7s-server"></i>All monthly plan benefits at a discounted rate</li>
-                                        <li><i class="pe-7s-graph"></i>Priority support for account</li>
-                                        <li><i class="pe-7s-mail-open"></i>Exclusive early access to new features</li>
-                                        <li><i class="pe-7s-tools"></i>Ideal for Businesses looking for cost-effective, long-term procurement solutions.</li>
+                                        <li><i class="fa fa-forward text-primary" aria-hidden="true"></i>All monthly plan benefits at a discounted rate</li>
+                                        <li><i class="fa fa-forward text-primary" aria-hidden="true"></i>Priority support for account</li>
+                                        <li><i class="fa fa-forward text-primary" aria-hidden="true"></i>Exclusive early access to new features</li>
                                     </ul>
+                                    <p class="text-muted">Ideal for Businesses looking for cost-effective, long-term procurement solutions.</p>
 
                                     <div class="text-center">
                                         <a href="pricing-plans.html" class="btn btn-primary">Get Started</a>
@@ -180,9 +180,7 @@
                 </div>
             </div>
         </section>
-        <!-- End Pricing -->
 
-        <!-- FOOTER -->
         <footer class="section footer">
             <div class="container">
                 <div class="row">
@@ -191,14 +189,20 @@
                         <p class="text mt-4">MedHub Global is a trading name of One Vision Technologies Ltd. All rights reserved.</p>
                         <ul class="list-unstyled d-flex">
                             <li><h6 class="text">Follow Us :</h6></li>
-                            <li class="mx-2"><a href="https://www.facebook.com/people/MedHub-Global/61570166584714/">
-                                <i class="fa fa-facebook text-primary" aria-hidden="true"></i></a>
+                            <li class=""><a href="https://www.facebook.com/medhub.global/">
+                                <i class="mx-2 fa fa-facebook text-primary" aria-hidden="true"></i></a>
                             </li>
-                            <li class="mx-2"><a href="https://x.com/medhubglobal">
-                                <i class="fa fa-twitter text-primary" aria-hidden="true"></i></a>
+                            <li class=""><a href="https://x.com/medhubglobal">
+                                <i class="mx-2 fa fa-twitter text-primary" aria-hidden="true"></i></a>
                             </li>
-                            <li class="mx-2"><a href="https://www.linkedin.com/company/medhub-global">
-                                <i class="fa fa-linkedin text-primary" aria-hidden="true"></i></a>
+                            <li class=""><a href="https://www.linkedin.com/company/medhub-global/">
+                                <i class="mx-2 fa fa-linkedin text-primary" aria-hidden="true"></i></a>
+                            </li>
+                            <li class=""><a href="https://www.youtube.com/@medhub.global">
+                                <i class="mx-2 fa fa-youtube-play text-primary" aria-hidden="true"></i></a>
+                            </li>
+                            <li class=""><a href="https://www.instagram.com/medhubglobal/">
+                                <i class="mx-2 fa fa-instagram text-primary" aria-hidden="true"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -210,7 +214,7 @@
                             <li><a href="buyer.html">For Buyer</a></li>
                             <li><a href="supplier.html">For Supplier</a></li>
                             <li><a href="pricing-plans.html">Pricing Plans</a></li>
-                            <li><a href="contact-us.html">Request a Demo</a></li>
+                            <li><a href="contact-us.html?contact-form=request-demo">Request a Demo</a></li>
                         </ul>
                     </div>
 
@@ -251,21 +255,27 @@
                     <div class="col-lg-12">
                         <hr class="text-light border-2"/>
                         <div class="footer-alt text-center">
-                            <!-- <p class="text-muted mb-0"><script>document.write(new Date().getFullYear())</script> © Zodkoo</p> -->
-                             &copy; 2025 <a href="#">medhubglobal.com</a>. All rights reserved
+                             &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">medhubglobal.com</a>. All rights reserved
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- END FOOTER -->
 
-        <!-- Back to top -->
         <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top-btn text-white px-1 rounded"><i class="pe-7s-angle-up"></i></a>
 
-        <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- Main Js -->
         <script src="js/app.js"></script>
     </body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const navbarCustom = document.querySelector(".navbar-custom");
+
+        navbarToggler.addEventListener("click", function () {
+            navbarCustom.classList.toggle("active");
+            });
+        });
+    </script>
 </html>
