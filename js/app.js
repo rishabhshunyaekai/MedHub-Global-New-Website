@@ -35,7 +35,7 @@ window.onscroll = function () {
 
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        console.log(document.body.scrollTop);
+        // console.log(document.body.scrollTop);
         mybutton.style.display = "block";
     } else {
         mybutton.style.display = "none";
