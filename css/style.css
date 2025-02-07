@@ -1987,4 +1987,7 @@ div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
     flex-direction: column-reverse;
    }
 }
- 
+
+.custom-container {
+  margin: 80px;
+}
