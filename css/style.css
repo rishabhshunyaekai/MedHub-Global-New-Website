@@ -752,6 +752,18 @@ html {
   color: #496174;
 }
 
+.text-size {
+  font-size: 18px !important;
+}
+
+.tag-line-heading h3 {
+  font-size: 40px;
+}
+
+.about-section {
+  padding-bottom: 50px;
+}
+
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -763,6 +775,40 @@ html {
 
 .margin-top-between-row {
   margin-top: 6rem;
+}
+
+@media (max-width:1200px) {
+  .margin-top-after-heading {
+    margin-top: 3rem;
+  }
+  
+  .margin-top-between-row {
+    margin-top: 4.5rem;
+  }
+}
+@media (max-width:1024px) {
+  .margin-top-after-heading {
+    margin-top: 2.5rem;
+  }
+  
+  .margin-top-between-row {
+    margin-top: 3.5rem;
+  }
+  .text-size {
+    font-size: 16px !important;
+  }
+}
+@media (max-width:768px) {
+  .margin-top-after-heading {
+    margin-top: 2rem;
+  }
+  
+  .margin-top-between-row {
+    margin-top: 3rem;
+  }
+  .text-size {
+    font-size: 15px !important;
+  }
 }
 
 .sub-title {
@@ -929,7 +975,8 @@ h5 {
 
 .video-title h1 {
   color: #fff;
-  font-size: 4.5rem;
+  font-size: 3.8rem;
+  /* font-size: 4.5rem; */
 }
 
 .video-title h4 {
@@ -1038,6 +1085,32 @@ h5 {
   }
 } 
 
+.bg-video-1 {
+  position: relative;
+  width: 100%;
+}
+
+.video-container-1 {
+  width: 100vw;
+  height: 56.25vw;
+}
+
+.video-container-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.video-container-1 iframe {
+  width: 100%;
+  height: 100%;
+}
+
 /* Background Images */
 .bg-img-1 {
   /* background: url("../images/MedHub/homepage-banner.png") no-repeat; */
@@ -1049,11 +1122,18 @@ h5 {
   /* background: url("../images/MedHub/Aboutpage-banner.png") no-repeat; */
   background: url("../images/AboutusBanner.jpg") no-repeat;
   background-size: cover;
+  height: 600px;
 }
 
 .bg-img-2 {
   background: url("../images/bg1.jpg") center no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 1400px)  {
+  .bg-img-01 {
+    height: auto;
+  }
 }
 
 .header-title-box {
@@ -1096,7 +1176,7 @@ h5 {
 }
 
 .about-detail-img {
-  padding: 8% 0;
+  padding: 11% 0;
 }
 
 @media (max-width: 768px) {
@@ -1116,6 +1196,9 @@ h5 {
   .about-detail-img {
     padding: 0% 0;
   }
+  .title {
+    text-align: center;
+  }
 }
 
 .home-fullscreen {
@@ -1124,7 +1207,7 @@ h5 {
 }
 
 .home-wrapper {
-  padding: 200px 0px 150px 0px;
+  padding: 100px 0px 100px 0px;
 }
 
 .home-wrapper h1 {
@@ -1150,22 +1233,22 @@ h5 {
 }
 
 .home-wrapper-alt {
-  display: table-cell;
+  /* display: table-cell; */
   /* vertical-align: middle; */
   vertical-align: bottom;
 }
 
 .homepage-wrapper {
-  padding: 200px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
   position: relative;
   z-index: 1;
 }
 
 .homepage-wrapper h1 {
-  /* line-height: 46px; */
+  line-height: 66px;
   width: 80%;
   margin: 0 auto;
-  font-size: 4.5rem;
+  font-size: 3.8rem;
 }
 
 .homepage-wrapper h4 {
@@ -1174,6 +1257,10 @@ h5 {
   /* font-weight: 400; */
   width: 80%;
   margin: 50px auto 50px auto;
+}
+.homepage-wrapper h3 {
+  width: 80%;
+  margin: 40px auto 50px auto;
 }
 
 .homepage-wrapper-alt {
@@ -1213,10 +1300,10 @@ iframe {
     height: auto !important;
   }
   .home-wrapper {
-    padding: 150px 0px 110px 0px;
+    padding: 150px 0px 40px 0px;
   }
   .homepage-wrapper {
-    padding: 150px 0px 110px 0px;
+    padding: 50px 0px 40px 0px;
   }
   .homepage-wrapper h1 {
     font-size: 3rem;
@@ -1340,12 +1427,14 @@ iframe {
 
 .single-item {
   border-radius: 40px;
-  border: 2px solid #282F86;
-  box-shadow: 5px 10px 15px #282F86;
+  border: 1px solid #282F86;
+  /* box-shadow: 5px 10px 15px #282F86; */
+  box-shadow: 2px 5px 7px #3e3e3f;
+  /* box-shadow: 2px 5px 7px #3e3e3f, -1px -2px 5px #3e3e3f; */
 }
-.single-item:hover {
+/* .single-item:hover {
   box-shadow: -5px -10px 20px #282F86;
-}
+} */
 
 .pricing-column {
   position: relative;
@@ -1358,9 +1447,10 @@ iframe {
   max-width: 520px;
   padding: 0px 30px 50px;
   /* border: 2px solid #95A8B7; */
-  border: 2px solid #282F86 !important;
+  border: 1px solid #282F86 !important;
   border-radius: 40px;
-  box-shadow: 5px 5px 10px #282F86;
+  /* box-shadow: 5px 5px 10px #282F86; */
+  box-shadow: 2px 2px 5px #3e3e3f;
 }
 
 .pricing-column .inner-box p {
@@ -1712,7 +1802,8 @@ textarea.form-control {
   border-radius: 5px;
   margin-bottom: 30px;
   border-radius: 40px;
-  box-shadow: 5px 5px 10px #282F86;
+  box-shadow: 2px 2px 5px #3e3e3f;
+  /* box-shadow: 5px 5px 10px #282F86; */
 }
 
 .job-box h5 {
@@ -1990,4 +2081,11 @@ div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
 
 .custom-container {
   margin: 80px;
+}
+
+.responsive-iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 40px;
+  box-shadow: 5px 5px 5px #3e3e3f;
 }
