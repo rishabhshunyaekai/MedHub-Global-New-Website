@@ -70,6 +70,7 @@ html {
   margin-bottom: 0px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  background-color: #282F86;
 }
 
 .navbar-custom.active {
@@ -1125,6 +1126,12 @@ h5 {
   height: 600px;
 }
 
+.bg-img-001 {
+  background: url("../images/AboutusBanner.jpg") no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
 .bg-img-2 {
   background: url("../images/bg1.jpg") center no-repeat;
   background-size: cover;
@@ -1248,7 +1255,7 @@ h5 {
   line-height: 66px;
   width: 80%;
   margin: 0 auto;
-  font-size: 3.8rem;
+  font-size: 3rem;
 }
 
 .homepage-wrapper h4 {
@@ -1413,6 +1420,9 @@ iframe {
     margin-bottom: 50px;
     text-align: center;
   }
+  .feat-text-left {
+    text-align: left !important;
+  }
 }
 @media (max-width: 992px) {
   .feat-description {
@@ -1428,13 +1438,63 @@ iframe {
 .single-item {
   border-radius: 40px;
   border: 1px solid #282F86;
-  /* box-shadow: 5px 10px 15px #282F86; */
   box-shadow: 2px 5px 7px #3e3e3f;
-  /* box-shadow: 2px 5px 7px #3e3e3f, -1px -2px 5px #3e3e3f; */
+  padding: 40px;
+  height: 350px;
 }
 /* .single-item:hover {
   box-shadow: -5px -10px 20px #282F86;
 } */
+
+.text {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .single-item {
+    height: 400px;
+  }
+}
+@media (max-width: 992px) {
+  .single-item {
+    height: 370px;
+  }
+}
+@media (max-width: 768px) {
+  .single-item {
+    height: 350px;
+  }
+}
+@media (max-width: 350px) {
+  .single-item {
+    height: 400px;
+  }
+}
+
+.single-item-buyer {
+  border-radius: 40px;
+  border: 1px solid #282F86;
+  box-shadow: 2px 5px 7px #3e3e3f;
+  padding: 40px;
+  height: 320px;
+}
+@media (max-width: 1200px) {
+  .single-item-buyer {
+    height: 330px;
+  }
+}
+@media (max-width: 992px) {
+  .single-item-buyer {
+    height: 330px;
+  }
+}
+@media (max-width: 350px) {
+  .single-item-buyer {
+    height: 400px;
+  }
+}
 
 .pricing-column {
   position: relative;
@@ -1803,6 +1863,7 @@ textarea.form-control {
   margin-bottom: 30px;
   border-radius: 40px;
   box-shadow: 2px 2px 5px #3e3e3f;
+  height: 320px;
   /* box-shadow: 5px 5px 10px #282F86; */
 }
 
@@ -1811,6 +1872,11 @@ textarea.form-control {
   font-weight: 400;
   margin-bottom: 15px;
 }
+
+.job-box p {
+  line-height: 26px;
+}
+
 
 .btn-job {
   padding: 6px 20px !important;
@@ -1843,7 +1909,7 @@ textarea.form-control {
 .footer a {
   /* color: rgba(255, 255, 255, 0.4); */
   color: #496174;
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 .footer a:hover {
@@ -2088,4 +2154,25 @@ div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
   aspect-ratio: 16 / 9;
   border-radius: 40px;
   box-shadow: 5px 5px 5px #3e3e3f;
+}
+
+.follow {
+  /* font-weight: bold; */
+}
+.copyright {
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .follow {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .follow {
+    font-size: 15px;
+  }
+  .copyright {
+    text-align: left;
+  }
 }
