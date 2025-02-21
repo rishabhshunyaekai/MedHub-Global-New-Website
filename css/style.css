@@ -763,6 +763,7 @@ html {
 
 .about-section {
   padding-bottom: 50px;
+  margin-top: 50px;
 }
 
 .section {
@@ -1086,14 +1087,52 @@ h5 {
   }
 } 
 
-.bg-video-1 {
+/* @media (max-width: 1335px) {
+  .bg-video-1 {
+    height: 700px !important;
+  }
+}
+@media (max-width: 1240px) {
+  .bg-video-1 {
+    height: 650px !important;
+  }
+}
+@media (max-width: 1155px) {
+  .bg-video-1 {
+    height: 600px !important;
+  }
+}
+@media (max-width: 1065px) {
+  .bg-video-1 {
+    height: 550px !important;
+  }
+}
+@media (max-width: 980px) {
+  .bg-video-1 {
+    height: 530px !important;
+  }
+}
+@media (max-width: 350px) {
+  .bg-video-1 {
+    height: 200px !important;
+  }
+} */
+
+/* .bg-video-1 {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .video-container-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100vw;
   height: 56.25vw;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 .video-container-1::before {
@@ -1103,7 +1142,40 @@ h5 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(212, 209, 209, 0);
+  z-index: 1;
+}
+
+.video-container-1 iframe {
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+} */
+
+.bg-video-1 {
+  position: relative;
+  width: 100%;
+}
+
+.video-container-1 {
+  margin-top: 3rem;
+  width: 100%;
+  height: 56.25vw;
+  max-height: 710px;
+}
+
+.video-container-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(212, 209, 209, 0);
   z-index: 1;
 }
 
@@ -1112,6 +1184,85 @@ h5 {
   height: 100%;
 }
 
+.video-header {
+  margin-top: 5rem;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  width: 100vw;
+  height: 740px;
+}
+
+.video-header video {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 2/1;
+  overflow: hidden;
+}
+
+@media (max-width: 1440px) {
+  .video-header {
+    height: 620px;
+  }
+}
+@media (max-width: 1380px) {
+  .video-header {
+    height: 450px;
+  }
+}
+@media (max-width: 992px) {
+  .video-header {
+    margin-top: 4rem;
+  }
+  .video-heading {
+    font-size: 36px !important;
+  }
+}
+@media (max-width: 580px) {
+  .video-heading {
+    font-size: 30px !important;
+  }
+}
+
+/* .nrml-video {
+  width: 100vw;
+  height: 600px;
+} */
+
+/* .youtube-embed {
+  position: relative;
+  padding-bottom: 56%;
+  width: 100%;
+  text-align: left;
+}
+
+.youtube-embed::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(212, 209, 209, 0);
+  z-index: 1;
+}
+
+.youtube-embed iframe {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .youtube-embed {
+    margin-top: 4rem;
+  }
+} */
+ 
 /* Background Images */
 .bg-img-1 {
   /* background: url("../images/MedHub/homepage-banner.png") no-repeat; */
