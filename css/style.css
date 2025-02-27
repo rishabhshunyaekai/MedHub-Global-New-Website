@@ -1203,6 +1203,11 @@ h5 {
   overflow: hidden;
 }
 
+@media (min-width: 1440px) {
+  .video-header {
+    height: 655px;
+  }
+}
 @media (max-width: 1440px) {
   .video-header {
     height: 620px;
