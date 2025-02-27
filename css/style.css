@@ -2087,12 +2087,37 @@ textarea.form-control {
   width: 100%;
 }
 
+/* Request a demo css */
+
+.request-demo-section {
+  padding: 120px 0px 50px 0px;
+}
+
+.request-demo-text {
+  font-size: 18px !important;
+}
+
+.request-title {
+  margin-bottom: -30px !important;
+  font-size: 15px;
+}
+
+.calendly-spinner {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .request-title {
+    margin-bottom: 10px !important;
+  }
+}
+
 
 /* Contact Us Form */
 
 .contact-section {
   position: relative;
-  padding: 50px 0px 50px 0px;
+  padding: 120px 0px 50px 0px;
 }
 
 .contact-section .info-content .single-info-box {
