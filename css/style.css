@@ -1225,11 +1225,39 @@ h5 {
   .video-heading {
     font-size: 36px !important;
   }
+  .mute-btn {
+    right: 20px !important;
+    padding: 4px 6px !important;
+    font-size: 14px !important;
+  }
 }
 @media (max-width: 580px) {
   .video-heading {
     font-size: 30px !important;
   }
+  .mute-btn {
+    right: 10px !important;
+    padding: 2px 4px !important;
+    font-size: 8px;
+  }
+}
+
+.mute-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.mute-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* .nrml-video {

@@ -51,7 +51,65 @@
             tag.src = "https://www.youtube.com/iframe_api";
             var firstScriptTag = document.getElementsByTagName('script')[0];
             firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        </script>          
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const video = document.getElementById("homeVideo");
+                const muteButton = document.getElementById("muteToggle");
+                let userInteracted = false;
+
+                video.muted = true;
+                function playVideo() {
+                    video.play().then(() => {
+                        console.log("Video Playing...");
+                    }).catch((err) => {
+                        console.log("Autoplay blocked:");
+                    });
+                };
+
+                playVideo();
+        
+                function updateMuteButton() {
+                    muteButton.innerHTML = video.muted ? "🔇" : "🔊";
+                }
+        
+                muteButton.addEventListener("click", function () {
+                    userInteracted = true;
+                    video.muted = !video.muted;
+                    updateMuteButton();
+                    playVideo();
+                });
+        
+                updateMuteButton();
+
+
+                // OnScroll mute/unmute functionality...
+                // window.addEventListener("scroll", function () {
+                //     if (window.scrollY > 50) {
+                //         video.muted = true;
+                //     } else {
+                //         video.muted = false;
+                //     }
+                //     updateMuteButton();
+                //     playVideo();
+                // });
+            });
+        </script>
+
+        <!-- <script>
+            document.addEventListener("scroll", function () {
+                const video = document.querySelector(".nrml-video");
+                if (window.scrollY > 50) {
+                    video.muted = true;
+                    updateMuteButton();
+                } else {
+                    video.muted = false;
+                    updateMuteButton();
+                }
+            });
+        </script> -->
+
     </head>
 
     <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="72">
@@ -111,11 +169,16 @@
         </nav>
 
         <div class="video-header">
-            <video class="nrml-video" autoplay loop muted>
+            <video class="nrml-video" id="homeVideo"
+                autoplay loop playsinline muted
+                preload="auto"
+                poster="images/MedHub/homepage/AboutMedHubGlobal.jpg"
+            >
                 <source src="images/video/homevideo.mp4" type="video/mp4">
                 <source src="images/video/homevideo.mp4" type="video/webm">
                 Your browser does not support the video tag.
             </video>
+            <button id="muteToggle" class="mute-btn">🔊 Unmute</button>
         </div>
 
         <!-- <section class="bg-video-1" id="home">
